@@ -1,0 +1,24 @@
+.comparison-tip{margin-top:18px;max-width:650px}
+.slide.visual-slide{display:none}
+.slide.visual-slide.active{display:grid}
+.progress-track span{width:100%;transition:transform .3s}
+.history-facts,.instruction-steps{display:grid;gap:10px;margin-top:22px}
+.history-facts div,.instruction-steps div{padding:13px 15px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.72)}
+.history-facts b,.history-facts span,.instruction-steps b,.instruction-steps span{display:block}
+.history-facts b,.instruction-steps b{font-size:.82rem;color:var(--sky-dark);margin-bottom:4px}
+.history-facts span,.instruction-steps span{font-size:.87rem;color:#526277;line-height:1.4}
+.quiz-slide{background:#fbfdff}
+.quiz-instruction{font-size:1.1rem;color:var(--muted);margin-bottom:28px}
+.standalone-quiz{max-width:760px;margin-top:0;background:#f7fbfe;padding:30px}
+.standalone-quiz>p{font-size:1.25rem;line-height:1.45}
+.standalone-quiz .choices{display:grid;gap:10px}
+.standalone-quiz .choices button{text-align:left}
+.mini-challenge{max-width:760px;margin-top:20px;padding:16px 18px;border-radius:11px;background:#fff7ed;border:1px solid #fed7aa;color:#7c4a03}
+.mini-challenge strong{display:block;color:#b45309;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
+.mini-challenge span{font-size:.92rem;line-height:1.4}
+.slide-picker{display:flex;align-items:center;gap:8px;color:#718198;font-size:.76rem;font-weight:700}
+.slide-picker select{max-width:180px;border:1px solid #d5e0e9;border-radius:8px;background:#fff;color:#526277;padding:9px 28px 9px 10px;font:inherit;font-size:.75rem;cursor:pointer}
+.resource-list{display:grid;gap:10px;max-width:780px;margin:22px 0}.resource-list a{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:15px 16px;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}.resource-list a:hover{transform:translateY(-2px);border-color:#7dd3fc;box-shadow:0 8px 20px rgba(14,165,233,.1)}.resource-list a>span{font-size:1.7rem}.resource-list strong,.resource-list small{display:block}.resource-list strong{color:var(--sky-dark);font-size:.95rem}.resource-list small{color:var(--muted);font-size:.82rem;line-height:1.35;margin-top:4px}.resource-list b{color:var(--sky-dark);font-size:1.2rem}.history-caption{font-size:.92rem!important;line-height:1.45!important;margin-top:20px;color:#607087!important}
+.history-stepper{grid-column:1/-1;display:flex;gap:7px;align-items:center;padding-bottom:4px}.history-stepper span{display:flex;align-items:center;gap:6px;color:#8aa0b2;font-size:.7rem;font-weight:700;white-space:nowrap}.history-stepper b{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#e8f0f5;color:#6d8495;font-size:.7rem}.history-stepper span.active{color:var(--sky-dark)}.history-stepper span.active b{background:var(--sky);color:#fff}.history-stepper span:not(:last-child)::after{content:"→";margin-left:6px;color:#c3d2dd}.history-slide h2{max-width:560px}@media(max-width:760px){.history-stepper{gap:3px;overflow-x:auto;padding-bottom:10px}.history-stepper span{font-size:.59rem}.history-stepper b{width:19px;height:19px;font-size:.6rem}.history-stepper span:not(:last-child)::after{margin-left:3px}}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:980px;margin:24px 0 18px}.video-card{min-width:0}.video-frame{aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:#dbeafe;box-shadow:0 8px 24px rgba(15,23,42,.1)}.video-frame iframe{width:100%;height:100%;border:0}.video-card strong,.video-card small{display:block}.video-card strong{font-size:.94rem;color:var(--sky-dark);margin-top:12px}.video-card small{font-size:.78rem;color:var(--muted);line-height:1.4;margin-top:4px}.timeline-link{display:inline-block;color:var(--sky-dark);font-size:.83rem;font-weight:700;text-decoration:none;border-bottom:1px solid #bae6fd;padding-bottom:3px}.timeline-link:hover{color:var(--ink)}@media(max-width:760px){.video-grid{grid-template-columns:1fr;gap:20px}.video-card small{font-size:.84rem}}
+@media(max-width:760px){.slide-picker{display:none}.history-facts div,.instruction-steps div{padding:11px 12px}.standalone-quiz{padding:20px}.quiz-instruction{font-size:1rem}}
