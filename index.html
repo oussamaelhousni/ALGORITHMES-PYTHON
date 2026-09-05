@@ -3,28 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Module 0 : découvrir l'informatique avant d'apprendre les algorithmes et Python." />
+    <meta
+      name="description"
+      content="Module 0 : découvrir l'informatique avant d'apprendre les algorithmes et Python."
+    />
     <title>Découvrir l'informatique — Module 0</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="enhancements.css" />
   </head>
   <body>
     <main class="presentation" id="presentation">
-      <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
-      <section class="slides" id="slides-container" tabindex="-1" aria-live="polite">
+      <div class="progress-track" aria-hidden="true">
+        <span id="progress-bar"></span>
+      </div>
+      <section
+        class="slides"
+        id="slides-container"
+        tabindex="-1"
+        aria-live="polite"
+      >
         <article class="slide active cover-slide" data-title="Bienvenue">
           <div class="cover-badge">ALGORITHMES → PYTHON</div>
           <div class="cover-grid">
             <div>
               <p class="eyebrow">Module 0 · Les fondations</p>
               <h1>Découvrir<br /><span>l’informatique</span></h1>
-              <p class="lead">Comprendre la machine avant de lui donner des instructions.</p>
+              <p class="lead">
+                Comprendre la machine avant de lui donner des instructions.
+              </p>
               <p class="trainer"><span>Formateur :</span> Oussama Elhousni</p>
             </div>
-            <div class="cover-orbit" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="core">⌘</div><span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span><span class="orbit-dot dot-three"></span></div>
+            <div class="cover-orbit" aria-hidden="true">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
+              <div class="core">⌘</div>
+              <span class="orbit-dot dot-one"></span
+              ><span class="orbit-dot dot-two"></span
+              ><span class="orbit-dot dot-three"></span>
+            </div>
           </div>
         </article>
 
@@ -36,60 +58,894 @@
         </article>
 
         <article class="slide" data-title="Ordinateur">
-          <p class="eyebrow">01 · La grande idée</p><h2>Qu’est-ce qu’un ordinateur ?</h2>
-          <div class="two-column intro-layout"><div><p class="big-copy">Un ordinateur est une machine qui <strong>reçoit des informations</strong>, les <strong>traite</strong> grâce à des instructions, puis produit un résultat.</p><div class="flow-mini"><span>Entrée</span><b>→</b><span>Traitement</span><b>→</b><span>Sortie</span></div></div><div class="definition-card"><span class="card-icon">💡</span><strong>Exemple</strong><p>Tu tapes une opération sur la calculatrice : le clavier donne l’entrée, le processeur calcule, l’écran affiche le résultat.</p></div></div>
-          <div class="quiz" data-answer="b"><div class="quiz-head"><span>QUIZ RAPIDE</span><small>Vérifie ton idée</small></div><p>Le rôle principal d’un ordinateur est de…</p><div class="choices"><button data-choice="a">Stocker uniquement des photos</button><button data-choice="b">Recevoir, traiter et produire des informations</button><button data-choice="c">Remplacer toutes les décisions humaines</button></div><div class="feedback"></div></div>
+          <p class="eyebrow">01 · La grande idée</p>
+          <h2>Qu’est-ce qu’un ordinateur ?</h2>
+          <div class="two-column intro-layout">
+            <div>
+              <p class="big-copy">
+                Un ordinateur est une machine qui
+                <strong>reçoit des informations</strong>, les
+                <strong>traite</strong> grâce à des instructions, puis produit
+                un résultat.
+              </p>
+              <div class="flow-mini">
+                <span>Entrée</span><b>→</b><span>Traitement</span><b>→</b
+                ><span>Sortie</span>
+              </div>
+            </div>
+            <div class="definition-card">
+              <span class="card-icon">💡</span><strong>Exemple</strong>
+              <p>
+                Tu tapes une opération sur la calculatrice : le clavier donne
+                l’entrée, le processeur calcule, l’écran affiche le résultat.
+              </p>
+            </div>
+          </div>
+          <div class="quiz" data-answer="b">
+            <div class="quiz-head">
+              <span>QUIZ RAPIDE</span><small>Vérifie ton idée</small>
+            </div>
+            <p>Le rôle principal d’un ordinateur est de…</p>
+            <div class="choices">
+              <button data-choice="a">Stocker uniquement des photos</button
+              ><button data-choice="b">
+                Recevoir, traiter et produire des informations</button
+              ><button data-choice="c">
+                Remplacer toutes les décisions humaines
+              </button>
+            </div>
+            <div class="feedback"></div>
+          </div>
         </article>
 
         <article class="slide" data-title="Hardware & software">
-          <p class="eyebrow">02 · Deux familles</p><h2>Hardware et software</h2>
-          <p class="big-copy">Un ordinateur ne fonctionne jamais avec une seule famille : il faut une <strong>machine physique</strong> et des <strong>instructions</strong> pour lui dire quoi faire.</p>
-          <div class="compare-grid"><div class="compare-card hardware"><div class="compare-title"><span>🧱</span><h3>Hardware</h3></div><p>Tout ce que tu peux <strong>toucher</strong>. Le matériel reçoit l’énergie et réalise les opérations.</p><ul><li>CPU</li><li>RAM</li><li>Écran</li><li>Clavier</li><li>SSD</li></ul></div><div class="compare-card software"><div class="compare-title"><span>⚙️</span><h3>Software</h3></div><p>Les programmes et instructions qui utilisent le matériel pour accomplir une tâche.</p><ul><li>Windows / Linux</li><li>Navigateur web</li><li>Jeu vidéo</li><li>Éditeur de code</li><li>Python</li></ul></div></div>
-          <div class="definition-card comparison-tip"><span class="card-icon">🧩</span><strong>Ils dépendent l’un de l’autre</strong><p>Un clavier sans logiciel ne sait pas quoi faire ; un logiciel sans processeur ne peut pas s’exécuter.</p></div>
+          <p class="eyebrow">02 · Deux familles</p>
+          <h2>Hardware et software</h2>
+          <p class="big-copy">
+            Un ordinateur ne fonctionne jamais avec une seule famille : il faut
+            une <strong>machine physique</strong> et des
+            <strong>instructions</strong> pour lui dire quoi faire.
+          </p>
+          <div class="compare-grid">
+            <div class="compare-card hardware">
+              <div class="compare-title">
+                <span>🧱</span>
+                <h3>Hardware</h3>
+              </div>
+              <p>
+                Tout ce que tu peux <strong>toucher</strong>. Le matériel reçoit
+                l’énergie et réalise les opérations.
+              </p>
+              <ul>
+                <li>CPU</li>
+                <li>RAM</li>
+                <li>Écran</li>
+                <li>Clavier</li>
+                <li>SSD</li>
+              </ul>
+            </div>
+            <div class="compare-card software">
+              <div class="compare-title">
+                <span>⚙️</span>
+                <h3>Software</h3>
+              </div>
+              <p>
+                Les programmes et instructions qui utilisent le matériel pour
+                accomplir une tâche.
+              </p>
+              <ul>
+                <li>Windows / Linux</li>
+                <li>Navigateur web</li>
+                <li>Jeu vidéo</li>
+                <li>Éditeur de code</li>
+                <li>Python</li>
+              </ul>
+            </div>
+          </div>
+          <div class="definition-card comparison-tip">
+            <span class="card-icon">🧩</span
+            ><strong>Ils dépendent l’un de l’autre</strong>
+            <p>
+              Un clavier sans logiciel ne sait pas quoi faire ; un logiciel sans
+              processeur ne peut pas s’exécuter.
+            </p>
+          </div>
         </article>
-        <article class="slide quiz-slide" data-title="Quiz · Hardware & software">
-          <p class="eyebrow">02 · Vérification</p><h2>Quiz : deux familles</h2>
-          <p class="quiz-instruction">Prends le temps de répondre sans revenir à la définition précédente.</p>
-          <div class="quiz standalone-quiz" data-answer="a"><div class="quiz-head"><span>QUIZ MODULE 0</span><small>Une seule réponse</small></div><p>Quelle phrase décrit correctement la relation entre hardware et software ?</p><div class="choices"><button data-choice="a">Le software donne des instructions au hardware.</button><button data-choice="b">Le hardware est un programme installé.</button><button data-choice="c">Le software fonctionne sans utiliser de matériel.</button></div><div class="feedback"></div></div>
-          <div class="mini-challenge"><strong>Défi express</strong><span>Classe aussi : caméra, Android, imprimante, navigateur, SSD.</span></div>
+        <article
+          class="slide quiz-slide"
+          data-title="Quiz · Hardware & software"
+        >
+          <p class="eyebrow">02 · Vérification</p>
+          <h2>Quiz : deux familles</h2>
+          <p class="quiz-instruction">
+            Prends le temps de répondre sans revenir à la définition précédente.
+          </p>
+          <div class="quiz standalone-quiz" data-answer="a">
+            <div class="quiz-head">
+              <span>QUIZ MODULE 0</span><small>Une seule réponse</small>
+            </div>
+            <p>
+              Quelle phrase décrit correctement la relation entre hardware et
+              software ?
+            </p>
+            <div class="choices">
+              <button data-choice="a">
+                Le software donne des instructions au hardware.</button
+              ><button data-choice="b">
+                Le hardware est un programme installé.</button
+              ><button data-choice="c">
+                Le software fonctionne sans utiliser de matériel.
+              </button>
+            </div>
+            <div class="feedback"></div>
+          </div>
+          <div class="mini-challenge">
+            <strong>Défi express</strong
+            ><span
+              >Classe aussi : caméra, Android, imprimante, navigateur,
+              SSD.</span
+            >
+          </div>
         </article>
 
         <article class="slide" data-title="Composants">
-          <p class="eyebrow">03 · La machine en équipe</p><h2>Les composants principaux</h2>
-          <div class="component-grid"><div class="component-item"><span>🧠</span><div><strong>CPU</strong><small>Exécute les instructions</small></div></div><div class="component-item"><span>⚡</span><div><strong>RAM</strong><small>Garde le travail en cours</small></div></div><div class="component-item"><span>💾</span><div><strong>Stockage</strong><small>Conserve les données</small></div></div><div class="component-item"><span>🔗</span><div><strong>Carte mère</strong><small>Relie les composants</small></div></div><div class="component-item"><span>🎛️</span><div><strong>Périphériques</strong><small>Permettent d’entrer et sortir</small></div></div></div>
-          <div class="quiz" data-answer="c"><div class="quiz-head"><span>QUIZ RAPIDE</span><small>Associe l’idée</small></div><p>Quel composant conserve un fichier même après l’arrêt du PC ?</p><div class="choices"><button data-choice="a">La RAM</button><button data-choice="b">Le CPU</button><button data-choice="c">Le stockage</button></div><div class="feedback"></div></div>
+          <p class="eyebrow">03 · La machine en équipe</p>
+          <h2>Les composants principaux</h2>
+          <div class="component-grid">
+            <div class="component-item">
+              <span>🧠</span>
+              <div>
+                <strong>CPU</strong><small>Exécute les instructions</small>
+              </div>
+            </div>
+            <div class="component-item">
+              <span>⚡</span>
+              <div>
+                <strong>RAM</strong><small>Garde le travail en cours</small>
+              </div>
+            </div>
+            <div class="component-item">
+              <span>💾</span>
+              <div>
+                <strong>Stockage</strong><small>Conserve les données</small>
+              </div>
+            </div>
+            <div class="component-item">
+              <span>🔗</span>
+              <div>
+                <strong>Carte mère</strong><small>Relie les composants</small>
+              </div>
+            </div>
+            <div class="component-item">
+              <span>🎛️</span>
+              <div>
+                <strong>Périphériques</strong
+                ><small>Permettent d’entrer et sortir</small>
+              </div>
+            </div>
+          </div>
+          <div class="quiz" data-answer="c">
+            <div class="quiz-head">
+              <span>QUIZ RAPIDE</span><small>Associe l’idée</small>
+            </div>
+            <p>Quel composant conserve un fichier même après l’arrêt du PC ?</p>
+            <div class="choices">
+              <button data-choice="a">La RAM</button
+              ><button data-choice="b">Le CPU</button
+              ><button data-choice="c">Le stockage</button>
+            </div>
+            <div class="feedback"></div>
+          </div>
         </article>
 
-        <article class="slide visual-slide" data-title="CPU"><div class="visual-copy"><p class="eyebrow">04 · Le moteur</p><h2>Le processeur<br /><span>CPU</span></h2><p>Le CPU lit les instructions, effectue les calculs et coordonne les opérations. Il travaille très vite, instruction après instruction.</p><div class="note"><b>À retenir</b><span>CPU = Central Processing Unit<br />C’est le centre de traitement.</span></div></div><div class="art-panel"><img src="assets/cpu.png" alt="Illustration d’un processeur CPU" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'" /><div class="art-fallback">CPU<br /><small>PROCESSING</small></div></div><div class="quiz compact-quiz" data-answer="b"><div class="quiz-head"><span>QUIZ</span><small>Une seule réponse</small></div><p>Que fait principalement le CPU ?</p><div class="choices"><button data-choice="a">Il garde les fichiers pour toujours</button><button data-choice="b">Il exécute les instructions</button><button data-choice="c">Il affiche les images</button></div><div class="feedback"></div></div></article>
+        <article class="slide visual-slide" data-title="CPU">
+          <div class="visual-copy">
+            <p class="eyebrow">04 · Le moteur</p>
+            <h2>Le processeur<br /><span>CPU</span></h2>
+            <p>
+              Le CPU lit les instructions, effectue les calculs et coordonne les
+              opérations. Il travaille très vite, instruction après instruction.
+            </p>
+            <div class="note">
+              <b>À retenir</b
+              ><span
+                >CPU = Central Processing Unit<br />C’est le centre de
+                traitement.</span
+              >
+            </div>
+          </div>
+          <div class="art-panel">
+            <img
+              src="assets/cpu.png"
+              alt="Illustration d’un processeur CPU"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'grid';
+              "
+            />
+            <div class="art-fallback">CPU<br /><small>PROCESSING</small></div>
+          </div>
+          <div class="quiz compact-quiz" data-answer="b">
+            <div class="quiz-head">
+              <span>QUIZ</span><small>Une seule réponse</small>
+            </div>
+            <p>Que fait principalement le CPU ?</p>
+            <div class="choices">
+              <button data-choice="a">
+                Il garde les fichiers pour toujours</button
+              ><button data-choice="b">Il exécute les instructions</button
+              ><button data-choice="c">Il affiche les images</button>
+            </div>
+            <div class="feedback"></div>
+          </div>
+        </article>
 
-        <article class="slide visual-slide" data-title="RAM"><div class="visual-copy"><p class="eyebrow">05 · Le bureau de travail</p><h2>La mémoire<br /><span>RAM</span></h2><p>La RAM garde temporairement les programmes et les données utilisés maintenant. Elle aide l’ordinateur à travailler sur plusieurs choses à la fois.</p><div class="note"><b>Image mentale</b><span>La RAM ressemble à un bureau : plus il est grand, plus tu peux étaler de travail.</span></div></div><div class="art-panel"><img src="assets/ram.png" alt="Illustration de barrettes de mémoire RAM" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'" /><div class="art-fallback">RAM<br /><small>WORKING MEMORY</small></div></div><div class="quiz compact-quiz" data-answer="a"><div class="quiz-head"><span>QUIZ</span><small>Vrai ou faux ?</small></div><p>Les données de la RAM disparaissent généralement quand on éteint l’ordinateur.</p><div class="choices"><button data-choice="a">Vrai</button><button data-choice="b">Faux</button></div><div class="feedback"></div></div></article>
+        <article class="slide visual-slide" data-title="RAM">
+          <div class="visual-copy">
+            <p class="eyebrow">05 · Le bureau de travail</p>
+            <h2>La mémoire<br /><span>RAM</span></h2>
+            <p>
+              La RAM garde temporairement les programmes et les données utilisés
+              maintenant. Elle aide l’ordinateur à travailler sur plusieurs
+              choses à la fois.
+            </p>
+            <div class="note">
+              <b>Image mentale</b
+              ><span
+                >La RAM ressemble à un bureau : plus il est grand, plus tu peux
+                étaler de travail.</span
+              >
+            </div>
+          </div>
+          <div class="art-panel">
+            <img
+              src="assets/ram.png"
+              alt="Illustration de barrettes de mémoire RAM"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'grid';
+              "
+            />
+            <div class="art-fallback">
+              RAM<br /><small>WORKING MEMORY</small>
+            </div>
+          </div>
+          <div class="quiz compact-quiz" data-answer="a">
+            <div class="quiz-head">
+              <span>QUIZ</span><small>Vrai ou faux ?</small>
+            </div>
+            <p>
+              Les données de la RAM disparaissent généralement quand on éteint
+              l’ordinateur.
+            </p>
+            <div class="choices">
+              <button data-choice="a">Vrai</button
+              ><button data-choice="b">Faux</button>
+            </div>
+            <div class="feedback"></div>
+          </div>
+        </article>
 
-        <article class="slide visual-slide" data-title="Stockage"><div class="visual-copy"><p class="eyebrow">06 · La mémoire longue durée</p><h2>Le stockage<br /><span>HDD & SSD</span></h2><p>Le stockage conserve les fichiers, les programmes et le système d’exploitation, même quand l’ordinateur est éteint.</p><div class="note"><b>Différence</b><span>Un SSD est généralement plus rapide. Un HDD utilise des pièces mécaniques.</span></div></div><div class="art-panel"><img src="assets/storage.png" alt="Illustration comparant un disque HDD et un SSD" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'" /><div class="art-fallback">HDD / SSD<br /><small>STORAGE</small></div></div><div class="quiz compact-quiz" data-answer="c"><div class="quiz-head"><span>QUIZ</span><small>Teste ta mémoire</small></div><p>Où reste un fichier enregistré après l’arrêt du PC ?</p><div class="choices"><button data-choice="a">Dans le CPU</button><button data-choice="b">Dans la RAM</button><button data-choice="c">Dans le stockage</button></div><div class="feedback"></div></div></article>
+        <article class="slide visual-slide" data-title="Stockage">
+          <div class="visual-copy">
+            <p class="eyebrow">06 · La mémoire longue durée</p>
+            <h2>Le stockage<br /><span>HDD & SSD</span></h2>
+            <p>
+              Le stockage conserve les fichiers, les programmes et le système
+              d’exploitation, même quand l’ordinateur est éteint.
+            </p>
+            <div class="note">
+              <b>Différence</b
+              ><span
+                >Un SSD est généralement plus rapide. Un HDD utilise des pièces
+                mécaniques.</span
+              >
+            </div>
+          </div>
+          <div class="art-panel">
+            <img
+              src="assets/storage.png"
+              alt="Illustration comparant un disque HDD et un SSD"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'grid';
+              "
+            />
+            <div class="art-fallback">
+              HDD / SSD<br /><small>STORAGE</small>
+            </div>
+          </div>
+          <div class="quiz compact-quiz" data-answer="c">
+            <div class="quiz-head">
+              <span>QUIZ</span><small>Teste ta mémoire</small>
+            </div>
+            <p>Où reste un fichier enregistré après l’arrêt du PC ?</p>
+            <div class="choices">
+              <button data-choice="a">Dans le CPU</button
+              ><button data-choice="b">Dans la RAM</button
+              ><button data-choice="c">Dans le stockage</button>
+            </div>
+            <div class="feedback"></div>
+          </div>
+        </article>
 
-        <article class="slide" data-title="Carte mère"><p class="eyebrow">07 · Le réseau de la machine</p><h2>La carte mère</h2><div class="two-column board-layout"><div class="motherboard"><div class="chip chip-a">CPU</div><div class="chip chip-b">RAM</div><div class="chip chip-c">SSD</div><i></i><i></i><i></i></div><div><p class="big-copy">La carte mère est le grand circuit qui <strong>relie</strong> les composants. Elle leur permet de communiquer et de partager l’énergie.</p><div class="definition-card"><span class="card-icon">🔗</span><strong>Comme une ville</strong><p>Les composants sont les quartiers et les pistes de la carte mère sont les routes qui les connectent.</p></div></div></div><div class="quiz" data-answer="b"><div class="quiz-head"><span>QUIZ RAPIDE</span><small>Comprends la connexion</small></div><p>Quel est le rôle principal de la carte mère ?</p><div class="choices"><button data-choice="a">Remplacer le système d’exploitation</button><button data-choice="b">Relier les composants entre eux</button><button data-choice="c">Conserver les photos</button></div><div class="feedback"></div></div></article>
+        <article class="slide" data-title="Carte mère">
+          <p class="eyebrow">07 · Le réseau de la machine</p>
+          <h2>La carte mère</h2>
+          <div class="two-column board-layout">
+            <div class="motherboard">
+              <div class="chip chip-a">CPU</div>
+              <div class="chip chip-b">RAM</div>
+              <div class="chip chip-c">SSD</div>
+              <i></i><i></i><i></i>
+            </div>
+            <div>
+              <p class="big-copy">
+                La carte mère est le grand circuit qui
+                <strong>relie</strong> les composants. Elle leur permet de
+                communiquer et de partager l’énergie.
+              </p>
+              <div class="definition-card">
+                <span class="card-icon">🔗</span
+                ><strong>Comme une ville</strong>
+                <p>
+                  Les composants sont les quartiers et les pistes de la carte
+                  mère sont les routes qui les connectent.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="quiz" data-answer="b">
+            <div class="quiz-head">
+              <span>QUIZ RAPIDE</span><small>Comprends la connexion</small>
+            </div>
+            <p>Quel est le rôle principal de la carte mère ?</p>
+            <div class="choices">
+              <button data-choice="a">
+                Remplacer le système d’exploitation</button
+              ><button data-choice="b">Relier les composants entre eux</button
+              ><button data-choice="c">Conserver les photos</button>
+            </div>
+            <div class="feedback"></div>
+          </div>
+        </article>
 
-        <article class="slide visual-slide" data-title="Périphériques"><div class="visual-copy"><p class="eyebrow">08 · Communiquer avec la machine</p><h2>Les périphériques</h2><p>Un périphérique permet à l’utilisateur et à l’ordinateur d’échanger des informations.</p><div class="legend"><span><i class="input-dot"></i> Entrée</span><span><i class="output-dot"></i> Sortie</span><span><i class="both-dot"></i> Les deux</span></div></div><div class="art-panel wide-art"><img src="assets/input-output.png" alt="Diagramme des périphériques d’entrée et de sortie" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'" /><div class="art-fallback">ENTRÉE → SORTIE<br /><small>INPUT / OUTPUT</small></div></div><div class="quiz compact-quiz" data-answer="c"><div class="quiz-head"><span>QUIZ</span><small>Classe le périphérique</small></div><p>Un microphone est principalement un périphérique de…</p><div class="choices"><button data-choice="a">Sortie</button><button data-choice="b">Stockage</button><button data-choice="c">Entrée</button></div><div class="feedback"></div></div></article>
+        <article class="slide visual-slide" data-title="Périphériques">
+          <div class="visual-copy">
+            <p class="eyebrow">08 · Communiquer avec la machine</p>
+            <h2>Les périphériques</h2>
+            <p>
+              Un périphérique permet à l’utilisateur et à l’ordinateur
+              d’échanger des informations.
+            </p>
+            <div class="legend">
+              <span><i class="input-dot"></i> Entrée</span
+              ><span><i class="output-dot"></i> Sortie</span
+              ><span><i class="both-dot"></i> Les deux</span>
+            </div>
+          </div>
+          <div class="art-panel wide-art">
+            <img
+              src="assets/input-output.png"
+              alt="Diagramme des périphériques d’entrée et de sortie"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'grid';
+              "
+            />
+            <div class="art-fallback">
+              ENTRÉE → SORTIE<br /><small>INPUT / OUTPUT</small>
+            </div>
+          </div>
+          <div class="quiz compact-quiz" data-answer="c">
+            <div class="quiz-head">
+              <span>QUIZ</span><small>Classe le périphérique</small>
+            </div>
+            <p>Un microphone est principalement un périphérique de…</p>
+            <div class="choices">
+              <button data-choice="a">Sortie</button
+              ><button data-choice="b">Stockage</button
+              ><button data-choice="c">Entrée</button>
+            </div>
+            <div class="feedback"></div>
+          </div>
+        </article>
 
-        <article class="slide" data-title="Système d’exploitation"><p class="eyebrow">09 · Le chef d’orchestre</p><h2>Le système d’exploitation</h2><div class="two-column os-layout"><div class="os-stack"><div>Windows</div><div>Linux</div><div>macOS</div><div>Android</div></div><div><p class="big-copy">Le système d’exploitation gère le matériel et permet aux applications de fonctionner.</p><ul class="clean-list"><li>Il organise les fichiers.</li><li>Il communique avec les périphériques.</li><li>Il donne une interface à l’utilisateur.</li></ul></div></div><div class="quiz" data-answer="a"><div class="quiz-head"><span>QUIZ RAPIDE</span><small>Choisis la bonne famille</small></div><p>Lequel est un système d’exploitation ?</p><div class="choices"><button data-choice="a">Linux</button><button data-choice="b">Chrome</button><button data-choice="c">Python</button></div><div class="feedback"></div></div></article>
+        <article class="slide" data-title="Système d’exploitation">
+          <p class="eyebrow">09 · Le chef d’orchestre</p>
+          <h2>Le système d’exploitation</h2>
+          <div class="two-column os-layout">
+            <div class="os-stack">
+              <div>Windows</div>
+              <div>Linux</div>
+              <div>macOS</div>
+              <div>Android</div>
+            </div>
+            <div>
+              <p class="big-copy">
+                Le système d’exploitation gère le matériel et permet aux
+                applications de fonctionner.
+              </p>
+              <ul class="clean-list">
+                <li>Il organise les fichiers.</li>
+                <li>Il communique avec les périphériques.</li>
+                <li>Il donne une interface à l’utilisateur.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="quiz" data-answer="a">
+            <div class="quiz-head">
+              <span>QUIZ RAPIDE</span><small>Choisis la bonne famille</small>
+            </div>
+            <p>Lequel est un système d’exploitation ?</p>
+            <div class="choices">
+              <button data-choice="a">Linux</button
+              ><button data-choice="b">Chrome</button
+              ><button data-choice="c">Python</button>
+            </div>
+            <div class="feedback"></div>
+          </div>
+        </article>
 
-        <article class="slide" data-title="Applications"><p class="eyebrow">10 · Les outils</p><h2>Logiciels et applications</h2><div class="app-grid"><div><span>🌐</span><strong>Navigateur</strong><small>Visiter des sites</small></div><div><span>📝</span><strong>Éditeur de texte</strong><small>Écrire et modifier</small></div><div><span>🎮</span><strong>Jeu vidéo</strong><small>Se divertir</small></div><div><span>💻</span><strong>Éditeur de code</strong><small>Créer des programmes</small></div></div><div class="quiz" data-answer="b"><div class="quiz-head"><span>QUIZ RAPIDE</span><small>Choisis l’outil</small></div><p>Quelle application utiliser pour écrire un programme Python ?</p><div class="choices"><button data-choice="a">Un lecteur audio</button><button data-choice="b">Un éditeur de code</button><button data-choice="c">Une calculatrice physique</button></div><div class="feedback"></div></div></article>
+        <article class="slide" data-title="Applications">
+          <p class="eyebrow">10 · Les outils</p>
+          <h2>Logiciels et applications</h2>
+          <div class="app-grid">
+            <div>
+              <span>🌐</span><strong>Navigateur</strong
+              ><small>Visiter des sites</small>
+            </div>
+            <div>
+              <span>📝</span><strong>Éditeur de texte</strong
+              ><small>Écrire et modifier</small>
+            </div>
+            <div>
+              <span>🎮</span><strong>Jeu vidéo</strong
+              ><small>Se divertir</small>
+            </div>
+            <div>
+              <span>💻</span><strong>Éditeur de code</strong
+              ><small>Créer des programmes</small>
+            </div>
+          </div>
+          <div class="quiz" data-answer="b">
+            <div class="quiz-head">
+              <span>QUIZ RAPIDE</span><small>Choisis l’outil</small>
+            </div>
+            <p>Quelle application utiliser pour écrire un programme Python ?</p>
+            <div class="choices">
+              <button data-choice="a">Un lecteur audio</button
+              ><button data-choice="b">Un éditeur de code</button
+              ><button data-choice="c">Une calculatrice physique</button>
+            </div>
+            <div class="feedback"></div>
+          </div>
+        </article>
 
-        <article class="slide visual-slide history-slide" data-title="Histoire · Les origines"><div class="visual-copy"><p class="eyebrow">11 · D’où venons-nous ?</p><h2>Petite histoire<br /><span>de l’informatique</span></h2><p>Avant les écrans et les claviers, les humains cherchaient déjà à compter plus vite et à éviter les erreurs.</p><div class="history-facts"><div><b>Le besoin</b><span>Compter des marchandises, mesurer le temps et organiser les échanges.</span></div><div><b>La première idée</b><span>Confier une partie du calcul à un outil, au lieu de tout faire de tête.</span></div><div><b>Le fil rouge</b><span>Chaque époque ajoute une couche : calculer, mémoriser, communiquer, automatiser.</span></div></div></div><div class="art-panel wide-art"><img src="assets/history-abacus.png" alt="Illustration historique d’un boulier" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'" /><div class="art-fallback">BOULIER<br /><small>COMPTER</small></div></div></article>
-        <article class="slide visual-slide history-slide" data-title="Histoire · Le boulier"><div class="visual-copy"><p class="eyebrow">11 · Étape 1</p><h2>Compter avec<br /><span>des outils</span></h2><p>Le boulier est un outil ancien qui aide à représenter les nombres avec des billes. Il ne “pense” pas : il permet à une personne de déplacer les quantités et de calculer plus facilement.</p><div class="note"><b>Idée importante</b><span>Un outil peut amplifier notre intelligence sans être un ordinateur.</span></div><p class="history-caption">Cette logique — représenter une information avec des positions — prépare déjà le terrain pour les machines à calculer.</p></div><div class="art-panel wide-art"><img src="assets/history-abacus.png" alt="Boulier utilisé pour compter" /></div></article>
-        <article class="slide visual-slide history-slide" data-title="Histoire · Machines mécaniques"><div class="visual-copy"><p class="eyebrow">11 · Étape 2</p><h2>Quand les engrenages<br /><span>calculent</span></h2><p>Au XVIIe et au XIXe siècle, des inventeurs créent des machines mécaniques capables d’additionner, soustraire et parfois multiplier.</p><div class="history-facts"><div><b>Pas de logiciel</b><span>Les règles sont inscrites dans la forme et le mouvement des engrenages.</span></div><div><b>Charles Babbage</b><span>Ses idées de machine analytique annoncent plusieurs principes des ordinateurs modernes.</span></div><div><b>Ada Lovelace</b><span>Elle comprend qu’une machine pourrait manipuler des symboles, pas seulement des nombres.</span></div></div></div><div class="art-panel wide-art"><img src="assets/history-mechanical.png" alt="Machine mécanique historique à engrenages" /></div></article>
-        <article class="slide visual-slide history-slide" data-title="Histoire · Premiers ordinateurs"><div class="visual-copy"><p class="eyebrow">11 · Étape 3</p><h2>Des machines<br /><span>électroniques</span></h2><p>Au XXe siècle, l’électricité remplace peu à peu les mécanismes. Les premiers ordinateurs électroniques occupent des pièces entières et consomment beaucoup d’énergie.</p><div class="note"><b>Le changement</b><span>Les calculs deviennent automatiques : la machine suit une suite d’instructions sans qu’un humain déplace chaque engrenage.</span></div><p class="history-caption">C’est le début de l’idée moderne : une machine générale, programmable, capable de résoudre différents problèmes.</p></div><div class="art-panel wide-art"><img src="assets/history-electronic.png" alt="Salle remplie d’un premier ordinateur électronique" /></div></article>
-        <article class="slide visual-slide history-slide" data-title="Histoire · PC et Internet"><div class="visual-copy"><p class="eyebrow">11 · Étape 4</p><h2>Le calcul arrive<br /><span>chez nous</span></h2><p>Les composants deviennent plus petits et moins chers. Les ordinateurs personnels apparaissent, puis les réseaux relient les machines et font naître le Web.</p><div class="history-facts"><div><b>Ordinateur personnel</b><span>Une machine n’est plus réservée aux laboratoires ou aux grandes entreprises.</span></div><div><b>Internet</b><span>Les ordinateurs peuvent échanger des informations à distance.</span></div><div><b>Le Web</b><span>Les pages et les navigateurs rendent cette connexion accessible au grand public.</span></div></div></div><div class="art-panel wide-art"><img src="assets/history-personal.png" alt="Évolution de l’ordinateur personnel vers les appareils connectés" /></div></article>
-        <article class="slide quiz-slide history-slide" data-title="Quiz · Histoire"><p class="eyebrow">11 · Vérification</p><h2>Quiz : une histoire d’idées</h2><p class="quiz-instruction">Réponds d’abord, puis utilise les étapes précédentes pour vérifier ton raisonnement.</p><div class="quiz standalone-quiz" data-answer="b"><div class="quiz-head"><span>QUIZ MODULE 0</span><small>Réfléchis à la chronologie</small></div><p>Quelle suite est la plus logique ?</p><div class="choices"><button data-choice="a">Smartphone → boulier → Internet → PC</button><button data-choice="b">Boulier → machines mécaniques → ordinateurs électroniques → PC et Internet</button><button data-choice="c">Internet → PC → boulier → premiers ordinateurs</button></div><div class="feedback"></div></div><div class="mini-challenge"><strong>Défi express</strong><span>Pourquoi les ordinateurs sont-ils devenus plus petits et plus rapides ? Donne deux raisons.</span></div></article>
+        <article
+          class="slide visual-slide history-slide"
+          data-title="Histoire · Les origines"
+        >
+          <div class="visual-copy">
+            <p class="eyebrow">11 · D’où venons-nous ?</p>
+            <h2>Petite histoire<br /><span>de l’informatique</span></h2>
+            <p>
+              Avant les écrans et les claviers, les humains cherchaient déjà à
+              compter plus vite et à éviter les erreurs.
+            </p>
+            <div class="history-facts">
+              <div>
+                <b>Le besoin</b
+                ><span
+                  >Compter des marchandises, mesurer le temps et organiser les
+                  échanges.</span
+                >
+              </div>
+              <div>
+                <b>La première idée</b
+                ><span
+                  >Confier une partie du calcul à un outil, au lieu de tout
+                  faire de tête.</span
+                >
+              </div>
+              <div>
+                <b>Le fil rouge</b
+                ><span
+                  >Chaque époque ajoute une couche : calculer, mémoriser,
+                  communiquer, automatiser.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="art-panel wide-art">
+            <img
+              src="assets/history-abacus.png"
+              alt="Illustration historique d’un boulier"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'grid';
+              "
+            />
+            <div class="art-fallback">BOULIER<br /><small>COMPTER</small></div>
+          </div>
+        </article>
+        <article
+          class="slide visual-slide history-slide"
+          data-title="Histoire · Le boulier"
+        >
+          <div class="visual-copy">
+            <p class="eyebrow">11 · Étape 1</p>
+            <h2>Compter avec<br /><span>des outils</span></h2>
+            <p>
+              Le boulier est un outil ancien qui aide à représenter les nombres
+              avec des billes. Il ne “pense” pas : il permet à une personne de
+              déplacer les quantités et de calculer plus facilement.
+            </p>
+            <div class="note">
+              <b>Idée importante</b
+              ><span
+                >Un outil peut amplifier notre intelligence sans être un
+                ordinateur.</span
+              >
+            </div>
+            <p class="history-caption">
+              Cette logique — représenter une information avec des positions —
+              prépare déjà le terrain pour les machines à calculer.
+            </p>
+          </div>
+          <div class="art-panel wide-art">
+            <img
+              src="assets/history-abacus.png"
+              alt="Boulier utilisé pour compter"
+            />
+          </div>
+        </article>
+        <article
+          class="slide visual-slide history-slide"
+          data-title="Histoire · Machines mécaniques"
+        >
+          <div class="visual-copy">
+            <p class="eyebrow">11 · Étape 2</p>
+            <h2>Quand les engrenages<br /><span>calculent</span></h2>
+            <p>
+              Au XVIIe et au XIXe siècle, des inventeurs créent des machines
+              mécaniques capables d’additionner, soustraire et parfois
+              multiplier.
+            </p>
+            <div class="history-facts">
+              <div>
+                <b>Pas de logiciel</b
+                ><span
+                  >Les règles sont inscrites dans la forme et le mouvement des
+                  engrenages.</span
+                >
+              </div>
+              <div>
+                <b>Charles Babbage</b
+                ><span
+                  >Ses idées de machine analytique annoncent plusieurs principes
+                  des ordinateurs modernes.</span
+                >
+              </div>
+              <div>
+                <b>Ada Lovelace</b
+                ><span
+                  >Elle comprend qu’une machine pourrait manipuler des symboles,
+                  pas seulement des nombres.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="art-panel wide-art">
+            <img
+              src="assets/history-mechanical.png"
+              alt="Machine mécanique historique à engrenages"
+            />
+          </div>
+        </article>
+        <article
+          class="slide visual-slide history-slide"
+          data-title="Histoire · Premiers ordinateurs"
+        >
+          <div class="visual-copy">
+            <p class="eyebrow">11 · Étape 3</p>
+            <h2>Des machines<br /><span>électroniques</span></h2>
+            <p>
+              Au XXe siècle, l’électricité remplace peu à peu les mécanismes.
+              Les premiers ordinateurs électroniques occupent des pièces
+              entières et consomment beaucoup d’énergie.
+            </p>
+            <div class="note">
+              <b>Le changement</b
+              ><span
+                >Les calculs deviennent automatiques : la machine suit une suite
+                d’instructions sans qu’un humain déplace chaque engrenage.</span
+              >
+            </div>
+            <p class="history-caption">
+              C’est le début de l’idée moderne : une machine générale,
+              programmable, capable de résoudre différents problèmes.
+            </p>
+          </div>
+          <div class="art-panel wide-art">
+            <img
+              src="assets/history-electronic.png"
+              alt="Salle remplie d’un premier ordinateur électronique"
+            />
+          </div>
+        </article>
+        <article
+          class="slide visual-slide history-slide"
+          data-title="Histoire · PC et Internet"
+        >
+          <div class="visual-copy">
+            <p class="eyebrow">11 · Étape 4</p>
+            <h2>Le calcul arrive<br /><span>chez nous</span></h2>
+            <p>
+              Les composants deviennent plus petits et moins chers. Les
+              ordinateurs personnels apparaissent, puis les réseaux relient les
+              machines et font naître le Web.
+            </p>
+            <div class="history-facts">
+              <div>
+                <b>Ordinateur personnel</b
+                ><span
+                  >Une machine n’est plus réservée aux laboratoires ou aux
+                  grandes entreprises.</span
+                >
+              </div>
+              <div>
+                <b>Internet</b
+                ><span
+                  >Les ordinateurs peuvent échanger des informations à
+                  distance.</span
+                >
+              </div>
+              <div>
+                <b>Le Web</b
+                ><span
+                  >Les pages et les navigateurs rendent cette connexion
+                  accessible au grand public.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="art-panel wide-art">
+            <img
+              src="assets/history-personal.png"
+              alt="Évolution de l’ordinateur personnel vers les appareils connectés"
+            />
+          </div>
+        </article>
+        <article class="slide quiz-slide" data-title="Quiz · Histoire">
+          <p class="eyebrow">11 · Vérification</p>
+          <h2>Quiz : une histoire d’idées</h2>
+          <p class="quiz-instruction">
+            Réponds d’abord, puis utilise les étapes précédentes pour vérifier
+            ton raisonnement.
+          </p>
+          <div class="quiz standalone-quiz" data-answer="b">
+            <div class="quiz-head">
+              <span>QUIZ MODULE 0</span
+              ><small>Réfléchis à la chronologie</small>
+            </div>
+            <p>Quelle suite est la plus logique ?</p>
+            <div class="choices">
+              <button data-choice="a">
+                Smartphone → boulier → Internet → PC</button
+              ><button data-choice="b">
+                Boulier → machines mécaniques → ordinateurs électroniques → PC
+                et Internet</button
+              ><button data-choice="c">
+                Internet → PC → boulier → premiers ordinateurs
+              </button>
+            </div>
+            <div class="feedback"></div>
+          </div>
+          <div class="mini-challenge">
+            <strong>Défi express</strong
+            ><span
+              >Pourquoi les ordinateurs sont-ils devenus plus petits et plus
+              rapides ? Donne deux raisons.</span
+            >
+          </div>
+        </article>
 
-        <article class="slide visual-slide" data-title="Programme"><div class="visual-copy"><p class="eyebrow">12 · Le voyage d’une instruction</p><h2>Comment un programme<br /><span>fonctionne</span></h2><p>Quand tu utilises une application, plusieurs étapes se passent très vite : le logiciel reçoit une donnée, demande un traitement, puis prépare un résultat.</p><div class="instruction-steps"><div><b>1 · Entrée</b><span>Une personne clique, tape ou choisit une valeur.</span></div><div><b>2 · Traitement</b><span>Le logiciel applique ses instructions ; le CPU calcule.</span></div><div><b>3 · Mémoire</b><span>La RAM garde temporairement les données utiles.</span></div><div><b>4 · Sortie</b><span>Le résultat apparaît à l’écran ou est enregistré.</span></div></div></div><div class="art-panel wide-art"><img src="assets/input-output.png" alt="Flux entrée traitement sortie" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'" /><div class="art-fallback">ENTRÉE → TRAITEMENT → SORTIE<br /><small>PROGRAM FLOW</small></div></div></article>
-        <article class="slide quiz-slide" data-title="Quiz · Programme"><p class="eyebrow">12 · Vérification</p><h2>Quiz : suis l’instruction</h2><p class="quiz-instruction">Imagine que tu utilises une calculatrice en ligne.</p><div class="quiz standalone-quiz" data-answer="c"><div class="quiz-head"><span>QUIZ MODULE 0</span><small>Remets les étapes dans ta tête</small></div><p>Tu saisis « 8 + 4 ». Que se passe-t-il juste après la saisie ?</p><div class="choices"><button data-choice="a">Le résultat est déjà enregistré sur le disque.</button><button data-choice="b">Le clavier devient le résultat.</button><button data-choice="c">Le programme traite l’information pour calculer le résultat.</button></div><div class="feedback"></div></div><div class="mini-challenge"><strong>Défi express</strong><span>Écris en une ligne l’entrée, le traitement et la sortie d’un programme qui calcule l’âge dans 5 ans.</span></div></article>
+        <article class="slide visual-slide" data-title="Programme">
+          <div class="visual-copy">
+            <p class="eyebrow">12 · Le voyage d’une instruction</p>
+            <h2>Comment un programme<br /><span>fonctionne</span></h2>
+            <p>
+              Quand tu utilises une application, plusieurs étapes se passent
+              très vite : le logiciel reçoit une donnée, demande un traitement,
+              puis prépare un résultat.
+            </p>
+            <div class="instruction-steps">
+              <div>
+                <b>1 · Entrée</b
+                ><span>Une personne clique, tape ou choisit une valeur.</span>
+              </div>
+              <div>
+                <b>2 · Traitement</b
+                ><span
+                  >Le logiciel applique ses instructions ; le CPU calcule.</span
+                >
+              </div>
+              <div>
+                <b>3 · Mémoire</b
+                ><span>La RAM garde temporairement les données utiles.</span>
+              </div>
+              <div>
+                <b>4 · Sortie</b
+                ><span>Le résultat apparaît à l’écran ou est enregistré.</span>
+              </div>
+            </div>
+          </div>
+          <div class="art-panel wide-art">
+            <img
+              src="assets/input-output.png"
+              alt="Flux entrée traitement sortie"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'grid';
+              "
+            />
+            <div class="art-fallback">
+              ENTRÉE → TRAITEMENT → SORTIE<br /><small>PROGRAM FLOW</small>
+            </div>
+          </div>
+        </article>
+        <article class="slide quiz-slide" data-title="Quiz · Programme">
+          <p class="eyebrow">12 · Vérification</p>
+          <h2>Quiz : suis l’instruction</h2>
+          <p class="quiz-instruction">
+            Imagine que tu utilises une calculatrice en ligne.
+          </p>
+          <div class="quiz standalone-quiz" data-answer="c">
+            <div class="quiz-head">
+              <span>QUIZ MODULE 0</span
+              ><small>Remets les étapes dans ta tête</small>
+            </div>
+            <p>
+              Tu saisis « 8 + 4 ». Que se passe-t-il juste après la saisie ?
+            </p>
+            <div class="choices">
+              <button data-choice="a">
+                Le résultat est déjà enregistré sur le disque.</button
+              ><button data-choice="b">Le clavier devient le résultat.</button
+              ><button data-choice="c">
+                Le programme traite l’information pour calculer le résultat.
+              </button>
+            </div>
+            <div class="feedback"></div>
+          </div>
+          <div class="mini-challenge">
+            <strong>Défi express</strong
+            ><span
+              >Écris en une ligne l’entrée, le traitement et la sortie d’un
+              programme qui calcule l’âge dans 5 ans.</span
+            >
+          </div>
+        </article>
 
-        <article class="slide recap-slide" data-title="Récapitulatif"><p class="eyebrow">13 · Tu as les bases</p><h2>Récapitulatif du module</h2><div class="recap-list"><div><b>01</b><span>Un ordinateur reçoit, traite et produit des informations.</span></div><div><b>02</b><span>Le hardware est physique ; le software donne les instructions.</span></div><div><b>03</b><span>CPU, RAM et stockage ont chacun un rôle différent.</span></div><div><b>04</b><span>Le système d’exploitation coordonne le matériel et les applications.</span></div><div><b>05</b><span>Un programme transforme une entrée en résultat.</span></div></div></article>
+        <article class="slide recap-slide" data-title="Récapitulatif">
+          <p class="eyebrow">13 · Tu as les bases</p>
+          <h2>Récapitulatif du module</h2>
+          <div class="recap-list">
+            <div>
+              <b>01</b
+              ><span
+                >Un ordinateur reçoit, traite et produit des informations.</span
+              >
+            </div>
+            <div>
+              <b>02</b
+              ><span
+                >Le hardware est physique ; le software donne les
+                instructions.</span
+              >
+            </div>
+            <div>
+              <b>03</b
+              ><span>CPU, RAM et stockage ont chacun un rôle différent.</span>
+            </div>
+            <div>
+              <b>04</b
+              ><span
+                >Le système d’exploitation coordonne le matériel et les
+                applications.</span
+              >
+            </div>
+            <div>
+              <b>05</b
+              ><span>Un programme transforme une entrée en résultat.</span>
+            </div>
+          </div>
+        </article>
 
-        <article class="slide exercises-slide" data-title="Exercices"><p class="eyebrow">14 · À toi de jouer</p><h2>Exercices du module 0</h2><p class="exercise-intro">Ces exercices sont à réaliser sans regarder de solution. Explique tes réponses avec tes propres mots.</p><div class="exercise-list"><div><span>01</span><p>Classe ces éléments : clavier, Linux, RAM, navigateur, écran, SSD.</p><em>Facile</em></div><div><span>02</span><p>Explique la différence entre la RAM et le stockage avec une comparaison de la vie quotidienne.</p><em>Facile</em></div><div><span>03</span><p>Décris le trajet d’une demande : « afficher la météo de Casablanca ».</p><em>Intermédiaire</em></div><div><span>04</span><p>Imagine une application de calcul. Identifie son entrée, son traitement et sa sortie.</p><em>Intermédiaire</em></div><div><span>05</span><p>Explique comment le CPU, la RAM et le stockage travaillent ensemble quand tu ouvres un jeu.</p><em>Challenge</em></div></div><div class="finish-box">✓ Module 0 terminé ?<br /><small>Tu es prêt à apprendre les algorithmes en pseudocode.</small></div></article>
+        <article class="slide exercises-slide" data-title="Exercices">
+          <p class="eyebrow">14 · À toi de jouer</p>
+          <h2>Exercices du module 0</h2>
+          <p class="exercise-intro">
+            Ces exercices sont à réaliser sans regarder de solution. Explique
+            tes réponses avec tes propres mots.
+          </p>
+          <div class="exercise-list">
+            <div>
+              <span>01</span>
+              <p>
+                Classe ces éléments : clavier, Linux, RAM, navigateur, écran,
+                SSD.
+              </p>
+              <em>Facile</em>
+            </div>
+            <div>
+              <span>02</span>
+              <p>
+                Explique la différence entre la RAM et le stockage avec une
+                comparaison de la vie quotidienne.
+              </p>
+              <em>Facile</em>
+            </div>
+            <div>
+              <span>03</span>
+              <p>
+                Décris le trajet d’une demande : « afficher la météo de
+                Casablanca ».
+              </p>
+              <em>Intermédiaire</em>
+            </div>
+            <div>
+              <span>04</span>
+              <p>
+                Imagine une application de calcul. Identifie son entrée, son
+                traitement et sa sortie.
+              </p>
+              <em>Intermédiaire</em>
+            </div>
+            <div>
+              <span>05</span>
+              <p>
+                Explique comment le CPU, la RAM et le stockage travaillent
+                ensemble quand tu ouvres un jeu.
+              </p>
+              <em>Challenge</em>
+            </div>
+          </div>
+          <div class="finish-box">
+            ✓ Module 0 terminé ?<br /><small
+              >Tu es prêt à apprendre les algorithmes en pseudocode.</small
+            >
+          </div>
+        </article>
       </section>
-      <footer class="controls"><button id="prevBtn" class="nav-btn" aria-label="Diapositive précédente">← <span>Précédent</span></button><div class="counter"><span id="slide-counter">Diapositive 1 sur 19</span><div class="dots" id="dots" aria-hidden="true"></div></div><label class="slide-picker">Aller à <select id="slide-select" aria-label="Choisir une diapositive"></select></label><button id="nextBtn" class="nav-btn primary" aria-label="Diapositive suivante"><span>Suivant</span> →</button></footer>
+      <footer class="controls">
+        <button
+          id="prevBtn"
+          class="nav-btn"
+          aria-label="Diapositive précédente"
+        >
+          ← <span>Précédent</span>
+        </button>
+        <div class="counter">
+          <span id="slide-counter">Diapositive 1 sur 19</span>
+          <div class="dots" id="dots" aria-hidden="true"></div>
+        </div>
+        <label class="slide-picker"
+          >Aller à
+          <select
+            id="slide-select"
+            aria-label="Choisir une diapositive"
+          ></select></label
+        ><button
+          id="nextBtn"
+          class="nav-btn primary"
+          aria-label="Diapositive suivante"
+        >
+          <span>Suivant</span> →
+        </button>
+      </footer>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js?v=20260904-generated"></script>
   </body>
 </html>

@@ -13,7 +13,12 @@ const historyExtension = `
 
 const oldHistorySlides = [...document.querySelectorAll('.history-slide')];
 const historyAnchor = oldHistorySlides[0];
-historyAnchor.insertAdjacentHTML('beforebegin', historyExtension);
+const cleanedHistoryExtension = historyExtension
+  .replace(/<p>Un <strong>registre[\s\S]*?<\/p>/, '')
+  .replace(/de 0 ou 1 au registre/g, 'un interrupteur électronique')
+  .replace(/transistor-register-v3\.png/g, 'transistor-only.png')
+  .replace(/Un transistor produit un signal 0 ou 1 puis huit transistors du registre présentent le nombre binaire 10110010/g, 'Illustration d’un transistor contrôlant un signal électrique 0 ou 1');
+historyAnchor.insertAdjacentHTML('beforebegin', cleanedHistoryExtension);
 oldHistorySlides.forEach((slide) => slide.remove());
 
 const module11Titles = [
@@ -125,6 +130,87 @@ document.querySelectorAll('.history-slide').forEach((slide, index) => {
   stepper.innerHTML = historyLabels.map((label, step) => `<span class="${step === Math.min(index, 3) ? 'active' : ''}"><b>${step + 1}</b>${label}</span>`).join('');
   slide.prepend(stepper);
 });
+
+// Keep the transistor lesson focused on the transistor itself.
+const transistorLesson = [...document.querySelectorAll('.history-slide')].find((slide) => slide.querySelector('h2')?.textContent.includes('registre'));
+if (transistorLesson) {
+  transistorLesson.dataset.title = '11.3 · Le transistor : interrupteur électronique';
+  transistorLesson.querySelector('h2').innerHTML = 'Le transistor :<br /><span>un interrupteur électronique</span>';
+  transistorLesson.querySelectorAll('p').forEach((paragraph) => {
+    if (paragraph.textContent.includes('registre')) paragraph.remove();
+  });
+  const note = transistorLesson.querySelector('.note');
+  if (note) note.innerHTML = '<b>À retenir</b><span>Un transistor agit comme un interrupteur rapide qui transforme le courant en signal 0/1.</span>';
+  const image = transistorLesson.querySelector('img');
+  if (image) {
+    image.src = 'assets/transistor-only.png?v=20260904-generated';
+    image.alt = 'Illustration d’un transistor contrôlant un signal électrique 0 ou 1';
+  }
+  const transistorQuiz = transistorLesson.querySelector('.quiz');
+  if (transistorQuiz) {
+    transistorQuiz.dataset.answer = 'a';
+    transistorQuiz.querySelector('p').textContent = 'Que représente un transistor lorsqu’il contrôle le courant ?';
+    const choices = ['Un interrupteur rapide', 'Un fichier permanent', 'Une image numérique'];
+    transistorQuiz.querySelectorAll('[data-choice]').forEach((button, index) => {
+      button.textContent = choices[index];
+      button.dataset.choice = String.fromCharCode(97 + index);
+    });
+  }
+}
+
+const textEncodingLesson = [...document.querySelectorAll('.history-slide')].find((slide) => slide.querySelector('h2')?.textContent.includes('nombre codé'));
+if (textEncodingLesson) {
+  const image = textEncodingLesson.querySelector('img');
+  if (image) {
+    image.src = 'assets/text-encoding-simple.png?v=20260904-generated';
+    image.alt = 'La lettre A transformée en nombre puis en code binaire';
+  }
+}
+
+const soundVideoLesson = [...document.querySelectorAll('.history-slide')].find((slide) => slide.querySelector('h2')?.textContent.includes('son et la vidéo'));
+if (soundVideoLesson) {
+  const image = soundVideoLesson.querySelector('img');
+  if (image) {
+    image.src = 'assets/sound-video-simple.png?v=20260904-generated';
+    image.alt = 'Une onde sonore et des images vidéo représentées comme des données';
+  }
+}
+
+const whyInventLesson = [...document.querySelectorAll('.history-slide')].find((slide) => slide.classList.contains('history-hero'));
+if (whyInventLesson) {
+  const image = whyInventLesson.querySelector('img');
+  if (image) {
+    image.src = 'assets/history-timeline.png?v=20260904-generated';
+    image.alt = 'Progression simple du comptage vers les outils mécaniques puis l’ordinateur';
+  }
+}
+
+const transistorSwitchLesson = [...document.querySelectorAll('.history-slide')].find((slide) => slide.querySelector('h2')?.textContent.includes('interrupteur électronique'));
+if (transistorSwitchLesson) {
+  const image = transistorSwitchLesson.querySelector('img');
+  if (image) {
+    image.src = 'assets/transistor-only.png?v=20260904-generated';
+    image.alt = 'Un transistor utilisé comme interrupteur électronique';
+  }
+}
+
+const binaryLesson = [...document.querySelectorAll('.history-slide')].find((slide) => slide.querySelector('h2')?.textContent.includes('Tout commence'));
+if (binaryLesson) {
+  const image = binaryLesson.querySelector('img');
+  if (image) {
+    image.src = 'assets/binary-switches.png?v=20260904-generated';
+    image.alt = 'Les deux états binaires 0 et 1';
+  }
+}
+
+const conversionLesson = [...document.querySelectorAll('.history-slide')].find((slide) => slide.querySelector('h2')?.textContent.includes('Convertir'));
+if (conversionLesson) {
+  const image = conversionLesson.querySelector('img');
+  if (image) {
+    image.src = 'assets/binary-switches.png?v=20260904-generated';
+    image.alt = 'Conversion entre le nombre décimal 10 et le nombre binaire 1010';
+  }
+}
 
 const slides = [...document.querySelectorAll('.slide')];
 const prevBtn = document.querySelector('#prevBtn');
