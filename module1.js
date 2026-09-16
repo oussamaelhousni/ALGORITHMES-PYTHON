@@ -240,17 +240,17 @@ prix ← [8.50, 12.00, 4.75]</code></pre>
 <article class="slide module1-slide module1-content" data-title="Tableau · Index">
   <p class="eyebrow">29 · Accéder à une valeur</p>
   <h2>L’index indique<br /><span>la position d’un élément</span></h2>
-  <div class="indexed-array"><div><small>index 1</small><b>12</b></div><div><small>index 2</small><b>15</b></div><div><small>index 3</small><b>10</b></div><div><small>index 4</small><b>18</b></div></div>
-  <pre class="module1-code"><code>ÉCRIRE notes[2]
+  <div class="indexed-array"><div><small>index 0</small><b>12</b></div><div><small>index 1</small><b>15</b></div><div><small>index 2</small><b>10</b></div><div><small>index 3</small><b>18</b></div></div>
+  <pre class="module1-code"><code>ÉCRIRE notes[1]
 Résultat : 15</code></pre>
-  <p class="module1-note">Selon les langages, le premier index peut être 0 ou 1. Dans ce module, nous utilisons 1 pour faciliter l’apprentissage.</p>
+  <p class="module1-note">Dans ce module, le premier index est 0 : le premier élément est donc accessible avec <code>notes[0]</code>.</p>
 </article>
 <article class="slide module1-slide module1-content" data-title="Tableau · Opérations">
   <p class="eyebrow">30 · Parcourir et calculer</p>
   <h2>Une boucle permet<br /><span>de traiter tout le tableau</span></h2>
   <pre class="module1-code"><code>somme ← 0
 
-POUR i ← 1 À 4 FAIRE
+POUR i ← 0 À 3 FAIRE
     somme ← somme + notes[i]
 FINPOUR
 
@@ -274,7 +274,7 @@ total ← total × 2</code></pre>
   <pre class="module1-code"><code>notes ← [12, 15, 10, 18, 9]
 somme ← 0
 
-POUR i ← 1 À 5 FAIRE
+POUR i ← 0 À 4 FAIRE
     somme ← somme + notes[i]
 FINPOUR
 
@@ -284,7 +284,7 @@ moyenne ← somme / 5
 <article class="slide module1-slide module1-content" data-title="Erreurs fréquentes">
   <p class="eyebrow">33 · Déboguer</p>
   <h2>Une erreur est une piste<br /><span>pour améliorer l’algorithme</span></h2>
-  <div class="error-list"><div><code>total ← prix1 + prix2</code><span>Erreur : les prix n’ont pas encore été lus.</span></div><div><code>TANT QUE i ≤ 5</code><span>Erreur possible : <code>i</code> n’est jamais augmenté.</span></div><div><code>notes[5]</code><span>Erreur possible : le tableau ne contient que quatre notes.</span></div><div><code>moyenne ← somme / 0</code><span>Erreur : division impossible par zéro.</span></div></div>
+  <div class="error-list"><div><code>total ← prix1 + prix2</code><span>Erreur : les prix n’ont pas encore été lus.</span></div><div><code>TANT QUE i ≤ 5</code><span>Erreur possible : <code>i</code> n’est jamais augmenté.</span></div><div><code>notes[4]</code><span>Erreur possible : le tableau ne contient que quatre notes (indices 0 à 3).</span></div><div><code>moyenne ← somme / 0</code><span>Erreur : division impossible par zéro.</span></div></div>
 </article>
 <article class="slide module1-slide module1-content" data-title="Exercices guidés">
   <p class="eyebrow">34 · À toi de pratiquer</p>
