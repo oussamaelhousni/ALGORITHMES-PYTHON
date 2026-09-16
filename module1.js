@@ -314,9 +314,9 @@ moyenne ← somme / 5
 </article>
 `;
 
-const module1Anchor = document.querySelector('.slide[data-title="Programme"]');
 const module1Container = document.querySelector("#slides-container");
 if (module1Container) {
-  if (module1Anchor) module1Anchor.insertAdjacentHTML("afterend", module1Markup);
-  else module1Container.insertAdjacentHTML("beforeend", module1Markup);
+  // Module 0 continues after the "Programme" slide with its quiz,
+  // recap, and exercises. Append Module 1 only after that complete block.
+  module1Container.insertAdjacentHTML("beforeend", module1Markup);
 }
