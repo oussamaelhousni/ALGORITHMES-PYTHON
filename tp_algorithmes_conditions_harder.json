@@ -1,0 +1,177 @@
+{
+  "title": "Algorithmique - Des variables aux conditions",
+  "subtitle": "Énoncés et contextes à résoudre : logique, validation et décisions",
+  "level": "Intermédiaire",
+  "themes": "Variables, types, opérateurs logiques, conditions imbriquées",
+  "objective": "Renforcer la maîtrise des variables, des expressions logiques et des structures conditionnelles en résolvant des problèmes réalistes avec des cas limites et des données invalides.",
+  "general_instruction": "Pour chaque exercice, partir uniquement du contexte et des règles données pour rédiger votre propre algorithme en pseudo-code. Aucun squelette ni extrait de solution n'est fourni : choisir les variables, les traitements, les conditions et l'organisation de l'algorithme. Vérifier les saisies, tester plusieurs valeurs et présenter clairement les résultats.",
+  "author": "Oussama elhousni",
+  "footer": "OFPPT  |  Algorithmique - Variables et conditions",
+  "closing": "Bon travail et bon raisonnement !",
+  "start_number": 4,
+  "exercises": [
+    {
+      "title": "Conversion de température",
+      "description": "Manipuler des unités et utiliser une formule mathématique avant l'introduction des conditions.",
+      "code": "Contexte : Un outil doit convertir une température entre les degrés Celsius et les degrés Fahrenheit.\nDonnées : Une température saisie par l'utilisateur et les deux unités de mesure.",
+      "tasks": [
+        "Le programme doit accepter une température exprimée en degrés Celsius.",
+        "Utiliser la relation °F = (°C × 9 / 5) + 32 pour obtenir la température en Fahrenheit.",
+        "Afficher la valeur saisie et la valeur convertie avec leurs unités.",
+        "Prévoir également la relation inverse °C = (°F − 32) × 5 / 9 pour le bonus.",
+        "Tester la conversion avec plusieurs valeurs, notamment une valeur négative et une valeur décimale."
+      ],
+      "bonus": "Ajouter la conversion inverse, de Fahrenheit vers Celsius, dans un second algorithme."
+    },
+    {
+      "title": "Vrai ou faux ?",
+      "description": "Construire des expressions logiques à partir de comparaisons entre des valeurs.",
+      "code": "Contexte : Un service souhaite déterminer plusieurs droits ou tarifs à partir de l'âge d'une personne, de son permis de conduire et de son statut d'étudiant.\nDonnées : Un âge, l'information de possession du permis et l'information de statut étudiant.",
+      "tasks": [
+        "Afficher si la personne est majeure.",
+        "Afficher si la personne peut conduire : elle doit être majeure et titulaire du permis.",
+        "Afficher si la personne bénéficie d'un tarif jeune : âge inférieur à 26 ans ou statut étudiant.",
+        "Écrire les résultats booléens obtenus pour plusieurs jeux de valeurs."
+      ],
+      "bonus": "Ajouter une condition logique qui indique si l'âge appartient à l'intervalle [18, 60]."
+    },
+    {
+      "title": "Positif, négatif ou nul",
+      "description": "Utiliser une condition simple puis une alternative pour classer un nombre.",
+      "code": "Contexte : Une application de calcul doit classer un nombre réel selon sa position par rapport à zéro.\nDonnées : Un nombre réel fourni par l'utilisateur.",
+      "tasks": [
+        "Lire un nombre réel.",
+        "Afficher « nombre positif » si la valeur est supérieure à zéro.",
+        "Compléter l'algorithme pour afficher « nombre négatif » ou « nombre nul » dans les autres cas.",
+        "Tester les trois situations : une valeur positive, une valeur négative et zéro."
+      ],
+      "bonus": "Afficher également la valeur absolue du nombre."
+    },
+    {
+      "title": "Pair ou impair",
+      "description": "Appliquer une condition basée sur le reste d'une division entière.",
+      "code": "Contexte : Un outil de contrôle doit indiquer si un nombre entier appartient à la catégorie pair ou impair.\nDonnées : Un nombre entier fourni par l'utilisateur.",
+      "tasks": [
+        "Lire un nombre entier.",
+        "Déterminer si le reste de la division du nombre par 2 est égal à zéro.",
+        "Afficher si le nombre est pair ou impair.",
+        "Tester l'algorithme avec des entiers positifs, négatifs et avec zéro."
+      ],
+      "bonus": "Indiquer en plus si le nombre est positif, négatif ou nul."
+    },
+    {
+      "title": "Validation d'une note",
+      "description": "Utiliser plusieurs conditions pour interpréter une note sur 20.",
+      "code": "Contexte : Une plateforme de formation doit contrôler une note sur 20 et communiquer le résultat correspondant.\nDonnées : Une note saisie par l'utilisateur et les règles de validation et d'admission.",
+      "tasks": [
+        "Vérifier que la note est comprise entre 0 et 20.",
+        "Afficher « note invalide » si elle est en dehors de cet intervalle.",
+        "Pour une note valide, afficher « ajourné » si elle est inférieure à 10 et « admis » sinon.",
+        "Tester les limites 0, 10 et 20 ainsi qu'une note invalide."
+      ],
+      "bonus": "Afficher « très bien » pour une note supérieure ou égale à 16."
+    },
+    {
+      "title": "Tarification selon l'âge",
+      "description": "Choisir un tarif avec une structure de conditions multiples.",
+      "code": "Contexte : La caisse d'un cinéma doit appliquer automatiquement le tarif correspondant à l'âge de chaque client.\nDonnées : L'âge du client et la grille tarifaire indiquée dans les consignes.",
+      "tasks": [
+        "Utiliser les tarifs suivants : moins de 6 ans = gratuit, de 6 à 17 ans = 25 DH, de 18 à 59 ans = 40 DH, 60 ans et plus = 30 DH.",
+        "Afficher le tarif correspondant à l'âge saisi.",
+        "Refuser une valeur d'âge négative.",
+        "Tester une valeur dans chaque tranche et les valeurs limites."
+      ],
+      "bonus": "Ajouter une réduction de 10 % pour les clients possédant une carte de fidélité."
+    },
+    {
+      "title": "Maximum de trois nombres",
+      "description": "Comparer plusieurs valeurs et gérer les cas d'égalité.",
+      "code": "Contexte : Un outil de comparaison reçoit trois nombres réels et doit identifier la valeur maximale, y compris lorsque plusieurs valeurs sont égales.\nDonnées : Trois nombres réels fournis par l'utilisateur.",
+      "tasks": [
+        "Lire trois nombres réels.",
+        "Déterminer et afficher le plus grand des trois nombres.",
+        "Prévoir le cas où deux ou trois nombres sont égaux.",
+        "Préparer des tests avec trois valeurs différentes, avec des égalités partielles et avec trois valeurs égales."
+      ],
+      "bonus": "Afficher aussi le plus petit nombre."
+    },
+    {
+      "title": "Mini-projet : décision d'admission",
+      "description": "Combiner variables, calculs, opérateurs logiques et conditions dans une situation complète.",
+      "code": "Contexte : Un centre de formation doit décider de l'admission d'un candidat à partir de son âge, de ses résultats et de l'état de son dossier.\nDonnées : Un âge, une note de test, une moyenne générale et l'information de complétude du dossier.",
+      "tasks": [
+        "Lire l'âge, la note du test, la moyenne générale et l'état du dossier.",
+        "Vérifier que les notes sont comprises entre 0 et 20 et que l'âge est positif.",
+        "Déclarer le candidat admis si l'âge est au moins égal à 18 ans, si le dossier est complet et si la note du test et la moyenne sont chacune au moins égales à 10.",
+        "Afficher une décision précise : données invalides, dossier incomplet, refusé ou admis.",
+        "Préparer un tableau de tests couvrant les cas nominaux, les limites et les erreurs de saisie."
+      ],
+      "bonus": "Ajouter une décision « admis sous réserve » lorsque toutes les conditions sont respectées sauf une moyenne comprise entre 9 et 10."
+    },
+    {
+      "title": "Date valide et date suivante",
+      "description": "Vérifier une date puis calculer le lendemain en tenant compte des mois de longueurs différentes et des années bissextiles.",
+      "code": "Contexte : Un calendrier doit vérifier une date saisie puis afficher la date du lendemain. Les mois n'ont pas tous la même longueur et certaines années comportent un jour supplémentaire en février.\nDonnées : Un jour, un mois et une année.",
+      "tasks": [
+        "Lire le jour, le mois et l'année, puis refuser les valeurs d'année non positives.",
+        "Déterminer si l'année est bissextile : divisible par 400, ou divisible par 4 mais pas par 100.",
+        "Déterminer le nombre maximal de jours du mois et vérifier que la date est valide.",
+        "Si la date est valide, calculer la date du lendemain, y compris le passage au mois ou à l'année suivante.",
+        "Afficher un message distinct pour une date invalide et pour une date valide."
+      ],
+      "bonus": "Afficher également la date de la veille et tester les dates 28/02, 29/02, 30/04 et 31/12."
+    },
+    {
+      "title": "Classification complète d'un triangle",
+      "description": "Contrôler trois longueurs et combiner des conditions géométriques pour caractériser un triangle.",
+      "code": "Contexte : Un logiciel de géométrie reçoit trois longueurs et doit vérifier qu'elles peuvent former un triangle avant de le caractériser.\nDonnées : Trois longueurs réelles et les propriétés géométriques demandées.",
+      "tasks": [
+        "Vérifier que les trois longueurs sont strictement positives.",
+        "Vérifier l'inégalité triangulaire : chaque côté doit être inférieur à la somme des deux autres.",
+        "Si le triangle est valide, indiquer s'il est équilatéral, isocèle ou scalène.",
+        "Tester en plus s'il est rectangle en utilisant le théorème de Pythagore après avoir identifié le plus grand côté.",
+        "Préparer des tests pour un triangle invalide, équilatéral, isocèle, scalène et rectangle."
+      ],
+      "bonus": "Calculer le périmètre et afficher la catégorie la plus précise possible, par exemple « isocèle rectangle »."
+    },
+    {
+      "title": "Facturation progressive avec remise et TVA",
+      "description": "Calculer une facture complète en appliquant des règles dépendant du montant, du statut du client et du mode de paiement.",
+      "code": "Contexte : Une boutique souhaite automatiser le calcul d'une facture en fonction du prix, de la quantité, du statut du client et du mode de paiement.\nDonnées : Les valeurs saisies et les règles commerciales précisées dans les consignes.",
+      "tasks": [
+        "Refuser un prix négatif ou nul et une quantité qui n'est pas un entier positif.",
+        "Calculer le sous-total, puis appliquer une remise de 5 % à partir de 1 000 DH et de 10 % à partir de 3 000 DH.",
+        "Accorder 3 % supplémentaires au client fidèle, sans dépasser 15 % de remise totale.",
+        "Calculer la TVA de 20 % après les remises et appliquer une réduction de 2 % au total TTC en cas de paiement en ligne.",
+        "Afficher le détail : sous-total, remise, TVA et total final."
+      ],
+      "bonus": "Ajouter des frais de livraison de 50 DH lorsque le total avant paiement est inférieur à 500 DH."
+    },
+    {
+      "title": "Résolution d'une équation du second degré",
+      "description": "Traiter tous les cas d'une équation ax² + bx + c = 0 à partir du discriminant.",
+      "code": "Contexte : Un outil mathématique doit étudier une équation de la forme ax² + bx + c = 0 et présenter toutes les situations possibles.\nDonnées : Les trois coefficients réels a, b et c.",
+      "tasks": [
+        "Lire les coefficients a, b et c.",
+        "Si a est nul, traiter l'équation du premier degré puis le cas particulier où b est également nul.",
+        "Si a n'est pas nul, calculer le discriminant Δ = b² - 4ac.",
+        "Afficher « aucune solution réelle », une solution double ou deux solutions réelles selon le signe de Δ.",
+        "Tester les cas Δ négatif, nul et positif, ainsi que les équations constantes."
+      ],
+      "bonus": "Vérifier les solutions affichées en les remplaçant dans l'équation initiale."
+    },
+    {
+      "title": "Admission avec classement et décision finale",
+      "description": "Construire une décision multicritère en hiérarchisant les erreurs, les refus et les admissions conditionnelles.",
+      "code": "Contexte : Un organisme de formation sélectionne des candidats à partir de leur âge, de trois évaluations, de la complétude du dossier et de leur disponibilité.\nDonnées : Les informations du candidat et les règles de classement précisées dans les consignes.",
+      "tasks": [
+        "Lire l'âge, trois notes sur 20, l'état du dossier et la disponibilité du candidat.",
+        "Rejeter immédiatement les données invalides : âge hors intervalle [18, 60] ou note hors intervalle [0, 20].",
+        "Calculer la moyenne pondérée avec 40 % pour la note technique, 35 % pour le projet et 25 % pour l'entretien.",
+        "Afficher « dossier incomplet », « non disponible », « refusé », « liste d'attente » ou « admis » selon les règles définies et dans un ordre de priorité explicite.",
+        "Justifier la décision par une phrase indiquant la moyenne et la condition qui a déterminé le résultat."
+      ],
+      "bonus": "Ajouter une mention « admis avec priorité » si la moyenne est au moins égale à 16 et si aucune note n'est inférieure à 12."
+    }
+  ]
+}

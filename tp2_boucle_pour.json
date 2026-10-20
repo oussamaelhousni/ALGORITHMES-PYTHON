@@ -1,0 +1,152 @@
+{
+  "title": "Algorithmique - La boucle POUR",
+  "subtitle": "Répéter des traitements et parcourir des suites",
+  "level": "Débutant à intermédiaire",
+  "themes": "Boucle POUR, compteurs, accumulateurs, tableaux",
+  "objective": "Utiliser une boucle POUR pour répéter des instructions, calculer des résultats et parcourir des suites de valeurs ou des tableaux.",
+  "general_instruction": "Pour chaque exercice, écrire un algorithme en pseudo-code, initialiser les variables nécessaires et afficher un résultat clairement formulé. Utiliser exclusivement une boucle POUR pour les répétitions demandées.",
+  "author": "Oussama Elhousni",
+  "footer": "OFPPT  |  Algorithmique - La boucle POUR",
+  "closing": "Bon travail !",
+  "exercises": [
+    {
+      "title": "Afficher une suite croissante",
+      "description": "Écrire un algorithme qui affiche tous les nombres entiers de 1 à 20 dans l'ordre croissant.",
+      "code": "",
+      "tasks": [
+        "Déclarer un compteur et le faire varier de 1 à 20 avec une boucle POUR.",
+        "Afficher la valeur du compteur à chaque répétition.",
+        "Présenter les valeurs une par ligne ou séparées par un espace."
+      ],
+      "result": "L'affichage doit contenir les nombres de 1 à 20, dans l'ordre."
+    },
+    {
+      "title": "Afficher une suite décroissante",
+      "description": "Afficher les nombres entiers de 10 à 1 en commençant par le plus grand.",
+      "code": "",
+      "tasks": [
+        "Utiliser une boucle POUR avec un compteur qui diminue de 1 à chaque répétition.",
+        "Afficher chaque valeur du compteur.",
+        "Ajouter un message indiquant la fin du compte à rebours."
+      ],
+      "result": "L'affichage doit être : 10, 9, 8, ..., 2, 1, puis le message de fin."
+    },
+    {
+      "title": "Afficher les nombres pairs",
+      "description": "Afficher tous les nombres pairs compris entre 0 et 50.",
+      "code": "",
+      "tasks": [
+        "Parcourir les valeurs de 0 à 50 avec une boucle POUR.",
+        "Tester si chaque valeur est divisible par 2.",
+        "Afficher uniquement les valeurs paires."
+      ],
+      "result": "L'affichage doit contenir 0, 2, 4, ..., 48 et 50, sans nombre impair."
+    },
+    {
+      "title": "Calculer une somme",
+      "description": "Calculer la somme de tous les entiers compris entre 1 et N, avec N = 10.",
+      "code": "",
+      "tasks": [
+        "Initialiser une variable somme à 0.",
+        "Ajouter chaque entier de 1 à N dans somme à l'aide d'une boucle POUR.",
+        "Afficher la valeur finale de somme."
+      ],
+      "result": "Pour N = 10, la somme affichée doit être égale à 55."
+    },
+    {
+      "title": "Calculer une factorielle",
+      "description": "Calculer la factorielle d'un nombre entier positif, avec N = 6. La factorielle de N est le produit de tous les entiers de 1 à N.",
+      "code": "",
+      "tasks": [
+        "Initialiser une variable produit à 1.",
+        "Multiplier produit par chaque entier de 1 à N avec une boucle POUR.",
+        "Afficher le résultat en précisant la valeur de N."
+      ],
+      "result": "Pour N = 6, le résultat affiché doit être 720."
+    },
+    {
+      "title": "Afficher une table de multiplication",
+      "description": "Afficher la table de multiplication du nombre 7, de 1 × 7 à 10 × 7.",
+      "code": "",
+      "tasks": [
+        "Parcourir les multiplicateurs de 1 à 10 avec une boucle POUR.",
+        "Calculer le produit du multiplicateur par 7.",
+        "Afficher chaque ligne sous la forme : 7 × multiplicateur = résultat."
+      ],
+      "result": "Les dix lignes de la table de 7 doivent être affichées correctement."
+    },
+    {
+      "title": "Compter et additionner des multiples",
+      "description": "Étudier les entiers compris entre 1 et 100 et traiter ceux qui sont divisibles par 3.",
+      "code": "",
+      "tasks": [
+        "Initialiser un compteur et une somme à 0.",
+        "Parcourir les entiers de 1 à 100 avec une boucle POUR.",
+        "Pour chaque multiple de 3, augmenter le compteur et ajouter la valeur à la somme.",
+        "Afficher le nombre de multiples trouvés et leur somme."
+      ],
+      "result": "Il faut afficher 33 multiples de 3 et une somme égale à 1683."
+    },
+    {
+      "title": "Calculer la moyenne de notes",
+      "description": "Calculer la moyenne de cinq notes : 12, 15, 8, 17 et 10.",
+      "code": "",
+      "tasks": [
+        "Déclarer les cinq notes ou les placer dans un tableau.",
+        "Parcourir les notes avec une boucle POUR et calculer leur somme.",
+        "Diviser la somme par le nombre de notes.",
+        "Afficher la moyenne et indiquer si elle est supérieure ou égale à 10."
+      ],
+      "result": "La moyenne doit être égale à 12,4 et l'étudiant doit être déclaré admis."
+    },
+    {
+      "title": "Rechercher le maximum et le minimum",
+      "description": "Analyser le tableau de nombres [14, 6, 21, 9, 17, 3, 12, 25].",
+      "code": "",
+      "tasks": [
+        "Initialiser le maximum et le minimum à partir du premier élément du tableau.",
+        "Parcourir les autres éléments avec une boucle POUR.",
+        "Mettre à jour le maximum et le minimum lorsque cela est nécessaire.",
+        "Afficher les deux valeurs trouvées."
+      ],
+      "result": "Le maximum doit être 25 et le minimum doit être 3."
+    },
+    {
+      "title": "Construire un tableau de carrés",
+      "description": "Créer un nouveau tableau contenant le carré de chaque entier de 1 à 10.",
+      "code": "",
+      "tasks": [
+        "Déclarer un tableau vide nommé carres.",
+        "Parcourir les entiers de 1 à 10 avec une boucle POUR.",
+        "Calculer le carré de chaque entier et l'ajouter au nouveau tableau.",
+        "Afficher le tableau obtenu."
+      ],
+      "result": "Le tableau obtenu doit être [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]."
+    },
+    {
+      "title": "Compter les occurrences d'une valeur",
+      "description": "Compter le nombre d'apparitions de la valeur 5 dans le tableau [5, 2, 5, 8, 5, 1, 4, 5].",
+      "code": "",
+      "tasks": [
+        "Initialiser un compteur d'occurrences à 0.",
+        "Parcourir le tableau avec une boucle POUR.",
+        "Augmenter le compteur chaque fois que l'élément courant est égal à 5.",
+        "Afficher le nombre total d'occurrences."
+      ],
+      "result": "La valeur 5 doit apparaître 4 fois dans le tableau."
+    },
+    {
+      "title": "Mini-projet : bilan des ventes",
+      "description": "Réaliser un bilan annuel à partir des ventes mensuelles suivantes : [1200, 950, 1430, 1100, 1750, 1600, 980, 1320, 1490, 1870, 1550, 2100].",
+      "code": "",
+      "tasks": [
+        "Parcourir les douze ventes avec une boucle POUR et calculer le total annuel.",
+        "Calculer la moyenne mensuelle.",
+        "Rechercher le meilleur mois et sa valeur de vente.",
+        "Compter le nombre de mois dont les ventes sont supérieures ou égales à 1500 DH.",
+        "Afficher un bilan contenant le total, la moyenne, le meilleur mois et le nombre de mois concernés."
+      ],
+      "result": "Le total annuel doit être 17340 DH, la moyenne 1445 DH, et 5 mois doivent atteindre au moins 1500 DH."
+    }
+  ]
+}

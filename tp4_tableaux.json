@@ -1,0 +1,96 @@
+{
+  "title": "Algorithmique - Les tableaux",
+  "subtitle": "Des premières manipulations aux algorithmes de tri",
+  "level": "Débutant à intermédiaire",
+  "themes": "Parcours, recherche et tris",
+  "objective": "Déclarer et manipuler un tableau, rechercher des valeurs, calculer des statistiques et appliquer les trois tris classiques.",
+  "general_instruction": "Écrire les algorithmes en pseudo-code. Déclarer et initialiser les variables nécessaires. Les tableaux contiennent des entiers et sont indexés de 1 à N. Contrôler les tailles et les positions saisies. Utiliser des boucles pour les parcours et afficher des résultats clairement formulés.",
+  "author": "Oussama Elhousni",
+  "footer": "OFPPT  |  Algorithmique - Les tableaux",
+  "exercises": [
+    {
+      "title": "Déclaration, accès et permutation",
+      "description": "Manipuler les éléments d'un tableau de cinq entiers. Effectuer les modifications dans l'ordre demandé.",
+      "code": "T = [12, 5, 8, 20, 3]",
+      "tasks": [
+        "Déclarer le tableau T et lui affecter les cinq valeurs fournies.",
+        "Afficher le premier élément, le troisième élément et le dernier élément.",
+        "Remplacer la valeur du deuxième élément par 15.",
+        "Permuter le premier et le dernier élément à l'aide d'une variable temporaire.",
+        "Donner le contenu du tableau après ces modifications."
+      ]
+    },
+    {
+      "title": "Parcours, recherche et statistiques",
+      "description": "Saisir une taille N comprise entre 1 et 100, puis remplir un tableau de N entiers.",
+      "code": "1 <= N <= 100  ;  X : valeur à rechercher",
+      "tasks": [
+        "Afficher tous les éléments du tableau à l'aide d'une boucle.",
+        "Calculer et afficher la somme et la moyenne des éléments. Prévoir une variable réelle pour la moyenne.",
+        "Trouver le minimum et le maximum ainsi que leurs positions. En cas d'égalité, retenir la première position.",
+        "Demander une valeur X et afficher sa première position, ou « Valeur introuvable » si elle est absente.",
+        "Compter et afficher le nombre d'occurrences de X."
+      ]
+    },
+    {
+      "title": "Tri d'un tableau",
+      "description": "Trier le tableau dans l'ordre croissant. Pour chacune des trois méthodes, repartir du tableau initial et écrire un algorithme distinct.",
+      "code": "T = [9, 4, 7, 2, 6]",
+      "tasks": [
+        "A. Tri par sélection : rechercher le plus petit élément de la partie non triée et le placer au début de cette partie par permutation.",
+        "Répéter jusqu'à obtenir un tableau trié. Donner l'état du tableau après chaque passage, puis écrire l'algorithme complet.",
+        "B. Tri par insertion : considérer le premier élément comme une partie déjà triée, puis insérer chaque élément suivant à sa place en décalant les éléments nécessaires.",
+        "Donner l'état du tableau après chaque insertion, puis écrire l'algorithme complet.",
+        "C. Tri à bulles : comparer les éléments voisins de gauche à droite et les permuter s'ils sont mal ordonnés. Répéter les passages pour trier le tableau.",
+        "Donner l'état du tableau après chaque passage, puis écrire l'algorithme complet.",
+        "Améliorer le tri à bulles pour l'arrêter lorsqu'aucune permutation n'a été effectuée pendant un passage."
+      ]
+    },
+    {
+      "title": "Inversion et comptage",
+      "description": "Saisir une taille N comprise entre 1 et 100, puis remplir un tableau de N entiers.",
+      "code": "Jeu d'essai possible : T = [6, -3, 0, 8, -5, 2]",
+      "tasks": [
+        "Compter les éléments pairs et les éléments impairs. Le nombre 0 est pair.",
+        "Compter séparément les éléments strictement positifs, strictement négatifs et nuls.",
+        "Afficher les éléments dans l'ordre inverse sans modifier le tableau.",
+        "Inverser ensuite réellement le contenu du tableau, sans utiliser un deuxième tableau, puis l'afficher."
+      ]
+    },
+    {
+      "title": "Insertion et suppression",
+      "description": "Un tableau de capacité 100 contient N éléments. Autoriser une taille initiale comprise entre 0 et 100. Réaliser l'insertion puis la suppression sur le tableau courant.",
+      "code": "Capacité = 100  ;  0 <= N <= 100",
+      "tasks": [
+        "Demander une valeur X et une position P. Insérer X à la position P en décalant les éléments nécessaires.",
+        "Autoriser l'insertion uniquement si N < 100 et 1 <= P <= N + 1. Sinon, afficher un message et conserver le tableau.",
+        "Demander une position à supprimer, puis supprimer l'élément correspondant en décalant les éléments suivants.",
+        "Autoriser la suppression uniquement si N > 0 et si la position est comprise entre 1 et N.",
+        "Mettre à jour N après chaque opération réussie et afficher le tableau courant ainsi que sa taille."
+      ]
+    },
+    {
+      "title": "Suppression des doublons",
+      "description": "Conserver chaque valeur une seule fois, dans l'ordre de sa première apparition.",
+      "code": "T = [4, 2, 4, 7, 2, 9, 7]",
+      "tasks": [
+        "Construire un deuxième tableau contenant chaque valeur de T une seule fois. Le tableau initial doit rester inchangé.",
+        "Conserver l'ordre de première apparition des valeurs.",
+        "Afficher le tableau obtenu et sa taille utile."
+      ],
+      "bonus": "Repartir du tableau initial et supprimer les doublons directement dans T, sans deuxième tableau. Mettre à jour sa taille utile."
+    },
+    {
+      "title": "Fusion de deux tableaux triés",
+      "description": "Fusionner deux tableaux déjà triés dans l'ordre croissant en conservant toutes leurs valeurs, y compris les doublons.",
+      "code": "A = [1, 4, 8, 12]\nB = [2, 4, 7, 10, 15]",
+      "tasks": [
+        "Déclarer un tableau C de capacité suffisante pour contenir tous les éléments de A et de B.",
+        "Construire C dans l'ordre croissant en parcourant A et B à l'aide de deux indices, sans appliquer un nouveau tri.",
+        "Lorsque l'un des tableaux est entièrement parcouru, ajouter les éléments restants de l'autre tableau.",
+        "Afficher C et sa taille utile."
+      ],
+      "bonus": "Adapter la fusion pour produire un tableau trié sans doublons."
+    }
+  ]
+}

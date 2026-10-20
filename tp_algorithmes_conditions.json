@@ -1,0 +1,158 @@
+{
+  "title": "Algorithmique - Des variables aux conditions",
+  "subtitle": "TP d'application progressif pour débutants",
+  "level": "Débutant",
+  "themes": "Écrire, Lire, variables, types, logique, conditions",
+  "objective": "Acquérir les bases de l'algorithmique en utilisant les instructions d'entrée/sortie, les variables et les principaux types de données, puis résoudre des problèmes à l'aide d'expressions logiques et de conditions.",
+  "general_instruction": "Pour chaque exercice, écrire l'algorithme en pseudo-code en utilisant les mots-clés Écrire, Lire, Si, Sinon et FinSi lorsque cela est nécessaire. Déclarer les variables avec leur type, tester plusieurs valeurs et présenter clairement les résultats.",
+  "author": "Oussama elhousni",
+  "footer": "OFPPT  |  Algorithmique - Des variables aux conditions",
+  "closing": "Bon travail et bon raisonnement !",
+  "exercises": [
+    {
+      "title": "Premier affichage",
+      "description": "Découvrir l'instruction Écrire et afficher des informations simples à l'écran.",
+      "code": "Algorithme PremierAffichage\nDébut\n  // Compléter l'algorithme\nFin",
+      "tasks": [
+        "Écrire votre nom et votre prénom sur deux lignes différentes.",
+        "Écrire le nom de votre établissement et votre filière.",
+        "Écrire une phrase de bienvenue destinée à un autre stagiaire.",
+        "Ajouter des commentaires pour expliquer les différentes parties de l'algorithme."
+      ],
+      "bonus": "Afficher une petite fiche personnelle composée de cinq informations différentes."
+    },
+    {
+      "title": "Lire et afficher une information",
+      "description": "Utiliser Lire pour récupérer une donnée saisie par l'utilisateur, puis la réutiliser avec Écrire.",
+      "code": "Algorithme MessageUtilisateur\nVariables\n  prenom : Chaîne\nDébut\n  Écrire(\"Saisir votre prénom :\")\n  Lire(prenom)\n  // Compléter l'affichage\nFin",
+      "tasks": [
+        "Déclarer une variable prenom de type Chaîne.",
+        "Lire le prénom saisi par l'utilisateur.",
+        "Afficher un message personnalisé contenant le prénom.",
+        "Tester l'algorithme avec au moins trois prénoms différents."
+      ],
+      "bonus": "Lire aussi la ville de l'utilisateur et afficher une phrase complète avec les deux informations."
+    },
+    {
+      "title": "Types de données et variables",
+      "description": "Déclarer plusieurs variables et reconnaître les types de données utilisés dans un formulaire simple.",
+      "code": "Algorithme FicheStagiaire\nVariables\n  nom : Chaîne\n  age : Entier\n  taille : Réel\n  inscrit : Booléen\nDébut\n  // Lire les valeurs puis les afficher\nFin",
+      "tasks": [
+        "Lire le nom, l'âge, la taille en mètres et l'état d'inscription d'un stagiaire.",
+        "Afficher chaque valeur avec une étiquette explicite.",
+        "Indiquer dans un commentaire le type de chaque variable.",
+        "Vérifier que les valeurs numériques sont bien utilisées comme nombres et non comme chaînes."
+      ],
+      "bonus": "Ajouter une variable de type Caractère pour stocker l'initiale du stagiaire."
+    },
+    {
+      "title": "Calculs sur deux nombres",
+      "description": "Réaliser des opérations arithmétiques à partir de deux valeurs saisies.",
+      "code": "Algorithme Operations\nVariables\n  a, b : Réel\nDébut\n  Écrire(\"Saisir deux nombres :\")\n  Lire(a, b)\n  // Calculer et afficher les résultats\nFin",
+      "tasks": [
+        "Calculer et afficher la somme, la différence et le produit de a et b.",
+        "Calculer la moyenne des deux nombres.",
+        "Calculer le quotient a / b lorsque b est différent de zéro.",
+        "Présenter chaque résultat avec une phrase claire."
+      ],
+      "bonus": "Calculer le reste de la division entière lorsque les deux valeurs sont des entiers."
+    },
+    {
+      "title": "Conversion de température",
+      "description": "Manipuler des unités et utiliser une formule mathématique avant l'introduction des conditions.",
+      "code": "Algorithme Temperature\nVariables\n  celsius, fahrenheit : Réel\nDébut\n  Écrire(\"Saisir une température en degrés Celsius :\")\n  Lire(celsius)\n  fahrenheit ← (celsius × 9 / 5) + 32\n  // Afficher la conversion\nFin",
+      "tasks": [
+        "Déclarer les deux variables de type Réel.",
+        "Lire la température en degrés Celsius.",
+        "Calculer la température correspondante en Fahrenheit.",
+        "Afficher les deux températures avec leurs unités."
+      ],
+      "bonus": "Ajouter la conversion inverse, de Fahrenheit vers Celsius, dans un second algorithme."
+    },
+    {
+      "title": "Vrai ou faux ?",
+      "description": "Construire des expressions logiques à partir de comparaisons entre des valeurs.",
+      "code": "Algorithme ExpressionsLogiques\nVariables\n  age : Entier\n  majeur, permis : Booléen\nDébut\n  Lire(age, permis)\n  majeur ← age >= 18\n  // Construire les autres expressions\nFin",
+      "tasks": [
+        "Construire une expression qui indique si la personne est majeure.",
+        "Construire une expression qui indique si la personne peut conduire : majeure ET titulaire du permis.",
+        "Construire une expression qui indique si la personne bénéficie d'un tarif jeune : âge inférieur à 26 ans OU étudiant.",
+        "Écrire les résultats booléens obtenus pour plusieurs jeux de valeurs."
+      ],
+      "bonus": "Ajouter une condition logique qui indique si l'âge appartient à l'intervalle [18, 60]."
+    },
+    {
+      "title": "Positif, négatif ou nul",
+      "description": "Utiliser une condition simple puis une alternative pour classer un nombre.",
+      "code": "Algorithme SigneNombre\nVariables\n  nombre : Réel\nDébut\n  Écrire(\"Saisir un nombre :\")\n  Lire(nombre)\n  // Compléter avec Si / Sinon\nFin",
+      "tasks": [
+        "Lire un nombre réel.",
+        "Afficher « nombre positif » si la valeur est supérieure à zéro.",
+        "Compléter l'algorithme pour afficher « nombre négatif » ou « nombre nul » dans les autres cas.",
+        "Tester les trois situations : une valeur positive, une valeur négative et zéro."
+      ],
+      "bonus": "Afficher également la valeur absolue du nombre."
+    },
+    {
+      "title": "Pair ou impair",
+      "description": "Appliquer une condition basée sur le reste d'une division entière.",
+      "code": "Algorithme Parite\nVariables\n  nombre : Entier\nDébut\n  Écrire(\"Saisir un entier :\")\n  Lire(nombre)\n  // Utiliser le reste de la division par 2\nFin",
+      "tasks": [
+        "Lire un nombre entier.",
+        "Déterminer si le reste de la division du nombre par 2 est égal à zéro.",
+        "Afficher si le nombre est pair ou impair.",
+        "Tester l'algorithme avec des entiers positifs, négatifs et avec zéro."
+      ],
+      "bonus": "Indiquer en plus si le nombre est positif, négatif ou nul."
+    },
+    {
+      "title": "Validation d'une note",
+      "description": "Utiliser plusieurs conditions pour interpréter une note sur 20.",
+      "code": "Algorithme ResultatNote\nVariables\n  note : Réel\nDébut\n  Écrire(\"Saisir une note sur 20 :\")\n  Lire(note)\n  // Vérifier la note puis déterminer le résultat\nFin",
+      "tasks": [
+        "Vérifier que la note est comprise entre 0 et 20.",
+        "Afficher « note invalide » si elle est en dehors de cet intervalle.",
+        "Pour une note valide, afficher « ajourné » si elle est inférieure à 10 et « admis » sinon.",
+        "Tester les limites 0, 10 et 20 ainsi qu'une note invalide."
+      ],
+      "bonus": "Afficher « très bien » pour une note supérieure ou égale à 16."
+    },
+    {
+      "title": "Tarification selon l'âge",
+      "description": "Choisir un tarif avec une structure de conditions multiples.",
+      "code": "Algorithme TarifCinema\nVariables\n  age : Entier\n  tarif : Réel\nDébut\n  Écrire(\"Saisir l'âge du client :\")\n  Lire(age)\n  // Déterminer le tarif selon l'âge\nFin",
+      "tasks": [
+        "Utiliser les tarifs suivants : moins de 6 ans = gratuit, de 6 à 17 ans = 25 DH, de 18 à 59 ans = 40 DH, 60 ans et plus = 30 DH.",
+        "Afficher le tarif correspondant à l'âge saisi.",
+        "Refuser une valeur d'âge négative.",
+        "Tester une valeur dans chaque tranche et les valeurs limites."
+      ],
+      "bonus": "Ajouter une réduction de 10 % pour les clients possédant une carte de fidélité."
+    },
+    {
+      "title": "Maximum de trois nombres",
+      "description": "Comparer plusieurs valeurs et gérer les cas d'égalité.",
+      "code": "Algorithme MaximumTrois\nVariables\n  a, b, c, maximum : Réel\nDébut\n  Écrire(\"Saisir trois nombres :\")\n  Lire(a, b, c)\n  // Rechercher la plus grande valeur\nFin",
+      "tasks": [
+        "Lire trois nombres réels.",
+        "Déterminer et afficher le plus grand des trois nombres.",
+        "Prévoir le cas où deux ou trois nombres sont égaux.",
+        "Réaliser au moins deux versions : avec des conditions imbriquées, puis avec une logique plus directe."
+      ],
+      "bonus": "Afficher aussi le plus petit nombre."
+    },
+    {
+      "title": "Mini-projet : décision d'admission",
+      "description": "Combiner variables, calculs, opérateurs logiques et conditions dans une situation complète.",
+      "code": "Algorithme AdmissionFormation\nVariables\n  age : Entier\n  noteTest, moyenne : Réel\n  dossierComplet : Booléen\nDébut\n  // Lire les informations du candidat\n  // Calculer la moyenne et afficher la décision\nFin",
+      "tasks": [
+        "Lire l'âge, la note du test, la moyenne générale et l'état du dossier.",
+        "Vérifier que les notes sont comprises entre 0 et 20 et que l'âge est positif.",
+        "Déclarer le candidat admis si l'âge est au moins égal à 18 ans, si le dossier est complet et si la note du test et la moyenne sont chacune au moins égales à 10.",
+        "Afficher une décision précise : données invalides, dossier incomplet, refusé ou admis.",
+        "Préparer un tableau de tests couvrant les cas nominaux, les limites et les erreurs de saisie."
+      ],
+      "bonus": "Ajouter une décision « admis sous réserve » lorsque toutes les conditions sont respectées sauf une moyenne comprise entre 9 et 10."
+    }
+  ]
+}

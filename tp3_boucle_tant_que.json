@@ -1,0 +1,173 @@
+{
+  "title": "Algorithmique - Les boucles TANT QUE et FAIRE...TANT QUE",
+  "subtitle": "Répéter des traitements selon une condition",
+  "level": "Débutant à intermédiaire",
+  "themes": "Boucle TANT QUE, boucle FAIRE...TANT QUE, validation, sentinelles",
+  "objective": "Choisir et utiliser une boucle conditionnelle pour répéter un traitement, contrôler une saisie, parcourir une suite et construire des algorithmes interactifs.",
+  "general_instruction": "Pour chaque exercice, écrire un algorithme en pseudo-code, initialiser les variables nécessaires et afficher un résultat clairement formulé. Utiliser exclusivement une boucle TANT QUE ou FAIRE...TANT QUE pour les répétitions demandées. Choisir TANT QUE lorsque le traitement peut ne pas s'exécuter et FAIRE...TANT QUE lorsqu'il doit s'exécuter au moins une fois.",
+  "author": "Oussama Elhousni",
+  "footer": "OFPPT  |  Algorithmique - Les boucles TANT QUE",
+  "closing": "Bon travail !",
+  "exercises": [
+    {
+      "title": "Compter de 1 à 20",
+      "description": "Afficher les nombres entiers de 1 à 20 dans l'ordre croissant à l'aide d'une boucle conditionnelle.",
+      "code": "",
+      "tasks": [
+        "Initialiser un compteur à 1.",
+        "Répéter l'affichage tant que le compteur est inférieur ou égal à 20.",
+        "Augmenter le compteur de 1 à chaque répétition.",
+        "Afficher un message après la fin de la boucle."
+      ],
+      "result": "L'affichage doit contenir les nombres de 1 à 20, dans l'ordre, puis le message de fin.",
+      "bonus": "Modifier l'algorithme pour afficher uniquement les nombres impairs."
+    },
+    {
+      "title": "Compte à rebours contrôlé",
+      "description": "Afficher un compte à rebours de 10 à 1 avant d'afficher un message de départ.",
+      "code": "",
+      "tasks": [
+        "Initialiser un compteur à 10.",
+        "Afficher le compteur tant qu'il est supérieur ou égal à 1.",
+        "Diminuer le compteur de 1 à chaque répétition.",
+        "Afficher le message « Départ ! » lorsque le compteur atteint 0."
+      ],
+      "result": "L'affichage doit être : 10, 9, 8, ..., 2, 1, puis « Départ ! ».",
+      "bonus": "Permettre à l'utilisateur de choisir la valeur de départ."
+    },
+    {
+      "title": "Afficher les multiples d'un nombre",
+      "description": "Afficher les multiples de 5 compris entre 0 et 100 sans parcourir les valeurs inutiles.",
+      "code": "nombre = 5\nlimite = 100",
+      "tasks": [
+        "Initialiser un multiple à 0.",
+        "Afficher le multiple tant qu'il est inférieur ou égal à la limite.",
+        "Ajouter nombre au multiple à chaque répétition.",
+        "Compter le nombre de multiples affichés."
+      ],
+      "result": "Les multiples affichés vont de 0 à 100 et le compteur final vaut 21.",
+      "bonus": "Demander nombre et limite à l'utilisateur et traiter aussi les valeurs invalides."
+    },
+    {
+      "title": "Saisir des valeurs jusqu'à une sentinelle",
+      "description": "Lire des nombres jusqu'à la saisie de 0, puis calculer un bilan des valeurs saisies.",
+      "code": "valeurs = [12, -4, 7, 15, 0]\nsentinelle = 0",
+      "tasks": [
+        "Lire une valeur et répéter tant qu'elle est différente de la sentinelle.",
+        "Calculer la somme des valeurs saisies sans inclure la sentinelle.",
+        "Compter le nombre de valeurs réellement saisies.",
+        "Afficher la somme et le nombre de valeurs."
+      ],
+      "result": "Pour la série fournie, la somme vaut 30 et le nombre de valeurs est 4.",
+      "bonus": "Calculer séparément la somme des valeurs positives et celle des valeurs négatives."
+    },
+    {
+      "title": "Valider une note",
+      "description": "Demander une note et recommencer tant que la valeur saisie n'est pas comprise entre 0 et 20.",
+      "code": "saisies = [25, -2, 14]",
+      "tasks": [
+        "Lire une note.",
+        "Tant que la note est inférieure à 0 ou supérieure à 20, afficher un message d'erreur et demander une nouvelle valeur.",
+        "Afficher la note validée.",
+        "Indiquer si l'étudiant est admis lorsque la note est supérieure ou égale à 10."
+      ],
+      "result": "Avec les saisies proposées, la note finale validée est 14 et l'étudiant est admis.",
+      "bonus": "Afficher une mention : Passable, Assez bien, Bien ou Très bien."
+    },
+    {
+      "title": "Rechercher le premier multiple",
+      "description": "Trouver le premier multiple de 7 strictement supérieur à 50 en avançant valeur par valeur.",
+      "code": "depart = 51\ndiviseur = 7",
+      "tasks": [
+        "Initialiser un nombre à 51.",
+        "Tant que le nombre n'est pas divisible par 7, l'augmenter de 1.",
+        "Arrêter la recherche dès que le premier multiple est trouvé.",
+        "Afficher le multiple et le nombre de tests effectués."
+      ],
+      "result": "Le premier multiple trouvé est 56, après 6 tests à partir de 51.",
+      "bonus": "Rendre le départ et le diviseur modifiables."
+    },
+    {
+      "title": "Inverser les chiffres d'un entier",
+      "description": "Construire l'entier obtenu en lisant les chiffres d'un nombre dans l'ordre inverse.",
+      "code": "nombre = 4827",
+      "tasks": [
+        "Initialiser un résultat inversé à 0.",
+        "Extraire le dernier chiffre du nombre courant.",
+        "Ajouter ce chiffre à la droite du résultat inversé.",
+        "Supprimer le dernier chiffre du nombre courant et répéter tant qu'il reste des chiffres.",
+        "Afficher le nombre initial et son inverse."
+      ],
+      "result": "Pour 4827, le nombre inversé doit être 7284.",
+      "bonus": "Gérer correctement le cas d'un nombre qui se termine par un ou plusieurs zéros."
+    },
+    {
+      "title": "Jeu de devinette",
+      "description": "Faire deviner un nombre secret compris entre 1 et 100 en donnant un indice après chaque tentative.",
+      "code": "secret = 37\ntentatives = [20, 50, 37]",
+      "tasks": [
+        "Demander une première proposition au joueur.",
+        "Répéter tant que la proposition est différente du nombre secret.",
+        "Afficher « Trop petit » ou « Trop grand » selon la proposition.",
+        "Compter les tentatives et afficher le nombre de tentatives nécessaires lorsque le joueur trouve."
+      ],
+      "result": "Avec les propositions fournies, le joueur trouve 37 en 3 tentatives.",
+      "bonus": "Limiter le nombre de tentatives à 7 et afficher un message d'échec si le nombre n'est pas trouvé."
+    },
+    {
+      "title": "Menu d'opérations",
+      "description": "Construire un menu qui reste affiché jusqu'au choix de sortie.",
+      "code": "solde_initial = 1000\noperations = [(1, 250), (2, 300), (3, 0), (0, 0)]",
+      "tasks": [
+        "Afficher un menu : 1-Déposer, 2-Retirer, 3-Consulter le solde, 0-Quitter.",
+        "Lire le choix de l'utilisateur et exécuter l'action correspondante.",
+        "Refuser un retrait supérieur au solde disponible.",
+        "Répéter le menu tant que le choix est différent de 0.",
+        "Afficher le solde final avant de quitter."
+      ],
+      "result": "Avec les opérations fournies, le solde final doit être de 950 DH.",
+      "bonus": "Ajouter une vérification des montants positifs et afficher le nombre d'opérations réalisées."
+    },
+    {
+      "title": "Calculer le PGCD",
+      "description": "Calculer le plus grand commun diviseur de deux entiers avec l'algorithme d'Euclide.",
+      "code": "a = 252\nb = 105",
+      "tasks": [
+        "Répéter tant que b est différent de 0.",
+        "Calculer le reste de la division de a par b.",
+        "Remplacer a par b puis b par le reste.",
+        "Afficher la valeur finale de a comme PGCD."
+      ],
+      "result": "Le PGCD de 252 et 105 doit être égal à 21.",
+      "bonus": "Utiliser le même principe pour calculer le PPCM des deux nombres."
+    },
+    {
+      "title": "Moyenne de notes avec arrêt",
+      "description": "Saisir plusieurs notes et arrêter la saisie lorsque l'utilisateur entre -1.",
+      "code": "saisies = [12, 15, 8, -1]\nsentinelle = -1",
+      "tasks": [
+        "Lire une première note avant de tester la condition d'arrêt.",
+        "Utiliser une boucle FAIRE...TANT QUE pour garantir au moins une lecture.",
+        "Additionner uniquement les notes comprises entre 0 et 20.",
+        "Afficher le nombre de notes et leur moyenne lorsque la sentinelle est saisie.",
+        "Prévoir un message si aucune note valide n'a été enregistrée."
+      ],
+      "result": "Avec les saisies proposées, 3 notes sont prises en compte et la moyenne vaut environ 11,67.",
+      "bonus": "Refuser les notes hors intervalle sans arrêter la saisie."
+    },
+    {
+      "title": "Mini-projet : suivi de températures",
+      "description": "Construire un petit programme qui enregistre des températures jusqu'à la valeur spéciale 999.",
+      "code": "temperatures = [18, 21, 17, 24, 999]\nsentinelle = 999",
+      "tasks": [
+        "Lire une température au moins une fois avec une boucle FAIRE...TANT QUE.",
+        "Arrêter la saisie lorsque la valeur 999 est entrée.",
+        "Calculer le nombre de températures, la somme et la moyenne.",
+        "Trouver la température minimale et la température maximale.",
+        "Afficher un bilan clair et signaler si la moyenne est supérieure ou égale à 20 °C."
+      ],
+      "result": "Le bilan doit contenir 4 températures, un minimum de 17 °C, un maximum de 24 °C et une moyenne de 20 °C.",
+      "bonus": "Afficher le nombre de températures supérieures ou égales à la moyenne."
+    }
+  ]
+}

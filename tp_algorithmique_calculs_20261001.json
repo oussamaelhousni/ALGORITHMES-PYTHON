@@ -1,0 +1,52 @@
+{
+  "title": "Algorithmique - Calculs de base",
+  "subtitle": "Variables, opérations et affichage des résultats",
+  "level": "Débutant",
+  "themes": "Variables, constantes, calculs arithmétiques",
+  "objective": "Déclarer des variables, effectuer des calculs simples et afficher des résultats dans un algorithme ou un programme.",
+  "general_instruction": "Pour chaque exercice, déclarer les variables nécessaires, réaliser le calcul demandé, afficher un résultat clairement formulé et tester l'algorithme avec les données fournies.",
+  "author": "Oussama Elhousni",
+  "footer": "OFPPT  |  Algorithmique - Calculs de base",
+  "closing": "Bon travail !",
+  "exercises": [
+    {
+      "title": "Carré d'un nombre",
+      "description": "Calculer le carré d'un nombre à partir d'une valeur donnée.",
+      "code": "nombre <- 7",
+      "tasks": [
+        "Déclarer une variable nombre et lui affecter la valeur 7.",
+        "Calculer le carré du nombre en multipliant le nombre par lui-même.",
+        "Stocker le résultat dans une variable nommée carre.",
+        "Afficher une phrase indiquant le nombre et son carré."
+      ],
+      "result": "Pour nombre = 7, le résultat affiché doit être 49.",
+      "bonus": "Modifier la valeur de nombre et vérifier que le résultat s'adapte automatiquement."
+    },
+    {
+      "title": "Prix total d'un article",
+      "description": "Déterminer le montant total à payer à partir du prix unitaire et de la quantité achetée.",
+      "code": "prixUnitaire <- 12.50\nquantite <- 4",
+      "tasks": [
+        "Déclarer les variables prixUnitaire et quantite avec les valeurs fournies.",
+        "Calculer le prix total en utilisant la formule : prix unitaire × quantité.",
+        "Stocker le résultat dans une variable nommée prixTotal.",
+        "Afficher le prix unitaire, la quantité et le prix total de l'article."
+      ],
+      "result": "Pour un prix unitaire de 12,50 et une quantité de 4, le prix total doit être 50,00.",
+      "bonus": "Tester l'algorithme avec une autre quantité et vérifier le nouveau montant."
+    },
+    {
+      "title": "Salaire net après déduction",
+      "description": "Calculer le salaire net d'un employé après l'application d'une déduction fixe de 15 %.",
+      "code": "salaireBrut <- 8500\ntauxDeduction <- 15",
+      "tasks": [
+        "Déclarer les variables salaireBrut et tauxDeduction avec les valeurs fournies.",
+        "Calculer le montant de la déduction : salaire brut × taux de déduction / 100.",
+        "Calculer le salaire net en retirant la déduction du salaire brut.",
+        "Afficher le salaire brut, le montant déduit et le salaire net."
+      ],
+      "result": "Pour un salaire brut de 8 500 et une déduction de 15 %, le salaire net doit être 7 225.",
+      "bonus": "Ajouter une variable tauxDeduction afin de pouvoir modifier facilement le pourcentage."
+    }
+  ]
+}
