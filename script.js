@@ -328,6 +328,10 @@ if (soundVideoLesson) {
 }
 
 const slides = [...document.querySelectorAll(".slide")];
+slides[0].id = "module-0";
+const firstModule1Slide = document.querySelector(".module1-slide");
+if (firstModule1Slide) firstModule1Slide.id = "module-1";
+const moduleLinks = [...document.querySelectorAll(".module-navigation a")];
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 const counter = document.querySelector("#slide-counter");
@@ -335,6 +339,7 @@ const progressBar = document.querySelector("#progress-bar");
 const dots = document.querySelector("#dots");
 const slideSelect = document.querySelector("#slide-select");
 let currentSlide = 0;
+let currentGroup;
 
 slides.forEach((slide, index) => {
   const dot = document.createElement("i");
@@ -343,7 +348,14 @@ slides.forEach((slide, index) => {
   const option = document.createElement("option");
   option.value = index;
   option.textContent = `${String(index + 1).padStart(2, "0")} · ${slide.dataset.title}`;
-  slideSelect.append(option);
+  const moduleNumber = slide.dataset.module || (slide.classList.contains("module1-slide") ? "1" : "0");
+  const moduleLabel = `Module ${moduleNumber} · ${["Informatique", "Algorithmes", "Python"][Number(moduleNumber)]}`;
+  if (!currentGroup || currentGroup.label !== moduleLabel) {
+    currentGroup = document.createElement("optgroup");
+    currentGroup.label = moduleLabel;
+    slideSelect.append(currentGroup);
+  }
+  currentGroup.append(option);
 });
 
 function showSlide(index) {
@@ -363,6 +375,12 @@ function showSlide(index) {
   slideSelect.value = currentSlide;
   prevBtn.disabled = currentSlide === 0;
   nextBtn.disabled = currentSlide === slides.length - 1;
+  const activeModule = slides[currentSlide].dataset.module || (slides[currentSlide].classList.contains("module1-slide") ? "1" : "0");
+  moduleLinks.forEach((link) => {
+    if (link.dataset.slideTarget === `module-${activeModule}`) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
+  });
+  document.title = `${slides[currentSlide].dataset.title} — Module ${activeModule}`;
   document.querySelector(".slides").focus({ preventScroll: true });
 }
 prevBtn.addEventListener("click", () => showSlide(currentSlide - 1));
@@ -371,6 +389,7 @@ slideSelect.addEventListener("change", (event) =>
   showSlide(Number(event.target.value)),
 );
 document.addEventListener("keydown", (event) => {
+  if (event.target instanceof Element && event.target.closest("input, textarea, select, [contenteditable='true']")) return;
   if (event.key === "ArrowLeft") showSlide(currentSlide - 1);
   if (event.key === "ArrowRight") showSlide(currentSlide + 1);
 });
@@ -386,9 +405,26 @@ document.querySelectorAll(".quiz").forEach((quiz) => {
       button.classList.add(isCorrect ? "correct" : "wrong");
       feedback.className = `feedback ${isCorrect ? "success" : "error"}`;
       feedback.textContent = isCorrect
-        ? "✓ Bravo ! Ton raisonnement est correct."
-        : "Pas encore. Reprends la conversion étape par étape.";
+        ? quiz.dataset.success || "✓ Bravo ! Ton raisonnement est correct."
+        : quiz.dataset.error || "Pas encore. Reprends la conversion étape par étape.";
     });
   });
 });
+function showLinkedSlide() {
+  const target = location.hash.slice(1);
+  const index = slides.findIndex((slide) => slide.id === target);
+  if (index >= 0) showSlide(index);
+}
+document.querySelectorAll("a[data-slide-target]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const index = slides.findIndex((slide) => slide.id === link.dataset.slideTarget);
+    if (index < 0) return;
+    event.preventDefault();
+    history.pushState(null, "", link.getAttribute("href"));
+    showSlide(index);
+  });
+});
+window.addEventListener("hashchange", showLinkedSlide);
+window.addEventListener("popstate", showLinkedSlide);
 showSlide(0);
+showLinkedSlide();

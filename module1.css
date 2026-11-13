@@ -869,6 +869,16 @@ body .module1-slide h2 code {
   max-width: 620px;
 }
 
+.subprogram-slide h2,
+body .subprogram-slide pre.module1-code {
+  overflow-wrap: anywhere;
+}
+
+.subprogram-slide .sequence-layout > *,
+.subprogram-slide .compare-wide > * {
+  min-width: 0;
+}
+
 @media (max-width: 780px) {
   .module1-slide {
     min-height: auto;

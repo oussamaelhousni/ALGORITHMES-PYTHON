@@ -310,7 +310,202 @@ moyenne ← somme / 5
   <h2>Défi final :<br /><span>écris ta propre solution</span></h2>
   <p class="module1-lead">Crée un algorithme qui lit les prix de trois produits, calcule le total, applique une réduction si le total dépasse 200 DH, puis affiche le prix à payer.</p>
   <div class="final-checklist"><span>☐ Entrées identifiées</span><span>☐ Variables choisies</span><span>☐ Calcul écrit</span><span>☐ Condition ajoutée</span><span>☐ Résultat affiché</span></div>
-  <div class="finish-box module1-finish">✓ Module 1 terminé<br /><small>Tu es prêt à traduire tes algorithmes vers un langage de programmation.</small></div>
+  <div class="finish-box module1-finish">La suite du module<br /><small>Apprends maintenant à organiser tes algorithmes avec des procédures et des fonctions.</small></div>
+</article>
+<article class="slide module1-slide subprogram-slide module1-section" data-title="Module 1 · Procédures et fonctions">
+  <p class="eyebrow">38 · Organiser ses algorithmes</p>
+  <h2>Les procédures<br /><span>et les fonctions</span></h2>
+  <p class="module1-lead">Un sous-programme est un bloc d’instructions nommé que l’on peut appeler plusieurs fois. Il permet de décomposer un problème et de réutiliser une solution.</p>
+  <div class="compare-wide"><div><b>Procédure</b><p>Exécuter une tâche, par exemple afficher un message. Elle ne renvoie pas de valeur avec RETOURNER.</p></div><div><b>Fonction</b><p>Calculer et renvoyer une valeur, par exemple le carré d’un nombre. Le résultat peut être utilisé dans une expression.</p></div></div>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Procédure · Définir et appeler">
+  <p class="eyebrow">39 · Une tâche nommée</p>
+  <h2>Une procédure<br /><span>exécute des instructions</span></h2>
+  <div class="sequence-layout"><pre class="module1-code"><code>PROCÉDURE AfficherBienvenue()
+DÉBUT
+    ÉCRIRE "Bienvenue !"
+FIN PROCÉDURE
+
+ALGORITHME Accueil
+DÉBUT
+    AfficherBienvenue()
+    AfficherBienvenue()
+FIN</code></pre><div class="sequence-note"><b>Définir ≠ appeler</b><p>La définition décrit la tâche. Les instructions s’exécutent seulement lors d’un appel.</p><p>Après chaque appel, l’exécution reprend à l’instruction suivante du programme appelant.</p><strong>Affichage :<br />Bienvenue !<br />Bienvenue !</strong></div></div>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Procédure · Paramètres et arguments">
+  <p class="eyebrow">40 · Transmettre une donnée</p>
+  <h2>Un paramètre permet<br /><span>de varier les appels</span></h2>
+  <div class="sequence-layout"><pre class="module1-code"><code>PROCÉDURE Saluer(prenom : chaîne)
+DÉBUT
+    ÉCRIRE "Bonjour ", prenom
+FIN PROCÉDURE
+
+ALGORITHME Accueil
+DÉBUT
+    Saluer("Sara")
+    Saluer("Amine")
+FIN</code></pre><div class="sequence-note"><b>Paramètre et argument</b><p><code>prenom</code> est le paramètre : il reçoit une donnée à chaque appel.</p><p><code>"Sara"</code> et <code>"Amine"</code> sont les arguments : les valeurs transmises.</p><strong>Affichage :<br />Bonjour Sara<br />Bonjour Amine</strong></div></div>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Fonction · Renvoyer une valeur">
+  <p class="eyebrow">41 · Un résultat réutilisable</p>
+  <h2>Une fonction<br /><span>renvoie une valeur</span></h2>
+  <div class="sequence-layout"><pre class="module1-code"><code>FONCTION Carre(n : entier) : entier
+DÉBUT
+    RETOURNER n * n
+FIN FONCTION
+
+ALGORITHME Calcul
+VARIABLES
+    resultat : entier
+DÉBUT
+    resultat ← Carre(5)
+    ÉCRIRE resultat
+FIN</code></pre><div class="sequence-note"><b>Lire la signature</b><p><code>n : entier</code> indique le type de l’entrée. Le dernier <code>: entier</code> indique le type du résultat.</p><p><code>RETOURNER</code> termine l’appel et transmet la valeur au programme appelant.</p><strong>Carre(5) vaut 25.<br />L’affichage est 25.</strong></div></div>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Fonction · Plusieurs paramètres">
+  <p class="eyebrow">42 · Exemple : une moyenne</p>
+  <h2>Deux entrées,<br /><span>un résultat</span></h2>
+  <div class="sequence-layout"><pre class="module1-code"><code>FONCTION Moyenne(a : réel, b : réel) : réel
+DÉBUT
+    RETOURNER (a + b) / 2
+FIN FONCTION
+
+ALGORITHME Notes
+VARIABLES
+    m : réel
+DÉBUT
+    m ← Moyenne(12, 16)
+    ÉCRIRE "Moyenne : ", m
+FIN</code></pre><div class="sequence-note"><b>Suivre les valeurs</b><p>À l’appel, <code>a</code> reçoit 12 et <code>b</code> reçoit 16. Le calcul donne (12 + 16) / 2 = 14.</p><p>Respecte le nombre, l’ordre et les types attendus des arguments.</p><strong>m reçoit 14.<br />Affichage : Moyenne : 14</strong></div></div>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Fonction · Retourner ou afficher">
+  <p class="eyebrow">43 · Deux actions différentes</p>
+  <h2>Afficher un résultat<br /><span>ou le retourner ?</span></h2>
+  <div class="compare-wide"><div><b>Afficher avec une procédure</b><pre class="module1-code"><code>PROCÉDURE AfficherDouble(n : entier)
+DÉBUT
+    ÉCRIRE 2 * n
+FIN PROCÉDURE
+
+// Appel : affiche 8
+AfficherDouble(4)</code></pre><p>L’écran reçoit 8. Cet appel ne fournit pas de valeur à affecter à une variable.</p></div><div><b>Retourner avec une fonction</b><pre class="module1-code"><code>FONCTION Double(n : entier) : entier
+DÉBUT
+    RETOURNER 2 * n
+FIN FONCTION
+
+// x est déclaré entier
+x ← Double(4) + 1</code></pre><p><code>x</code> reçoit 9. Aucun affichage n’a lieu sans une instruction ÉCRIRE.</p></div></div>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Fonction · Variables locales">
+  <p class="eyebrow">44 · Comprendre la portée</p>
+  <h2>Les variables locales<br /><span>restent dans leur bloc</span></h2>
+  <div class="sequence-layout"><pre class="module1-code"><code>FONCTION AjouterUn(n : entier) : entier
+VARIABLES
+    suivant : entier
+DÉBUT
+    suivant ← n + 1
+    RETOURNER suivant
+FIN FONCTION
+
+ALGORITHME Test
+VARIABLES
+    n, resultat : entier
+DÉBUT
+    n ← 5
+    resultat ← AjouterUn(n)
+    ÉCRIRE n, " ; ", resultat
+FIN</code></pre><div class="sequence-note"><b>Une copie de la valeur</b><p>Dans ces exemples, les paramètres sont passés par valeur : la fonction reçoit une copie de la valeur transmise.</p><p>Le paramètre <code>n</code> et la variable <code>suivant</code> sont locaux à la fonction. Le <code>n</code> du programme principal reste égal à 5.</p><strong>Affichage : 5 ; 6</strong></div></div>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Fonction · Retour et condition">
+  <p class="eyebrow">45 · Renvoyer selon un cas</p>
+  <h2>Une fonction peut<br /><span>prendre une décision</span></h2>
+  <div class="sequence-layout"><pre class="module1-code"><code>FONCTION Maximum(a : entier, b : entier) : entier
+DÉBUT
+    SI a &gt;= b ALORS
+        RETOURNER a
+    SINON
+        RETOURNER b
+    FIN SI
+FIN FONCTION</code></pre><div class="sequence-note"><b>Un résultat dans chaque cas</b><p><code>Maximum(8, 3)</code> renvoie 8.</p><p><code>Maximum(2, 7)</code> renvoie 7.</p><p><code>Maximum(4, 4)</code> renvoie 4.</p><strong>Chaque chemin de cette fonction renvoie un entier.</strong></div></div>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Exemple complet · Fonction et procédure">
+  <p class="eyebrow">46 · Combiner les deux</p>
+  <h2>La fonction calcule,<br /><span>la procédure affiche</span></h2>
+  <pre class="module1-code"><code>FONCTION PrixTTC(prixHT : réel, taux : réel) : réel
+DÉBUT
+    RETOURNER prixHT * (1 + taux / 100)
+FIN FONCTION
+
+PROCÉDURE AfficherPrix(montant : réel)
+DÉBUT
+    ÉCRIRE "Prix TTC : ", montant, " DH"
+FIN PROCÉDURE
+
+ALGORITHME Facture
+VARIABLES
+    total : réel
+DÉBUT
+    total ← PrixTTC(100, 20)
+    AfficherPrix(total)
+FIN</code></pre>
+  <p class="module1-lead">Exemple avec un taux de 20 % : la fonction renvoie 120, puis la procédure affiche « Prix TTC : 120 DH ».</p>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Quiz · Comprendre RETOURNER">
+  <p class="eyebrow">47 · Vérifier sa compréhension</p>
+  <h2>Quelle valeur<br /><span>reçoit la variable ?</span></h2>
+  <pre class="module1-code"><code>FONCTION Triple(n : entier) : entier
+DÉBUT
+    RETOURNER 3 * n
+FIN FONCTION
+
+// Dans le programme principal, r est déclaré entier
+r ← Triple(4) + Triple(2)</code></pre>
+  <div class="quiz" data-answer="b" data-error="Triple(4) renvoie 12 et Triple(2) renvoie 6. Additionne les deux résultats." data-success="✓ Exact : r reçoit 12 + 6 = 18. RETOURNER n’affiche rien.">
+    <div class="quiz-head"><span>QUIZ MODULE 1</span><small>Une seule réponse</small></div>
+    <p>Quelle valeur reçoit r ?</p><div class="choices"><button data-choice="a">6</button><button data-choice="b">18</button><button data-choice="c">Le texte « 12 6 »</button></div><div class="feedback" role="status"></div>
+  </div>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Quiz · Choisir une procédure ou une fonction">
+  <p class="eyebrow">48 · Choisir le bon outil</p>
+  <h2>Pour réutiliser<br /><span>un résultat de calcul</span></h2>
+  <div class="quiz standalone-quiz" data-answer="c" data-error="La remise doit pouvoir être stockée ou utilisée dans un autre calcul : il faut renvoyer une valeur." data-success="✓ Exact : une fonction renvoie la remise, puis le programme peut la soustraire au total.">
+    <div class="quiz-head"><span>QUIZ MODULE 1</span><small>Une seule réponse</small></div>
+    <p>Tu veux calculer une remise puis la soustraire au total. Quelle solution convient ?</p>
+    <div class="choices"><button data-choice="a">Une procédure qui affiche seulement la remise.</button><button data-choice="b">Une fonction qui contient uniquement ÉCRIRE.</button><button data-choice="c">Une fonction qui retourne le montant de la remise.</button></div><div class="feedback" role="status"></div>
+  </div>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Exercice · Périmètre et affichage">
+  <p class="eyebrow">49 · À toi de pratiquer</p>
+  <h2>Décompose le calcul<br /><span>d’un périmètre</span></h2>
+  <p class="module1-lead">Pour un rectangle de longueur 8 et de largeur 3, écris les sous-programmes puis le programme principal.</p>
+  <div class="recap-list module1-recap"><div><b>01</b><span>Écris une fonction <code>Perimetre(longueur : réel, largeur : réel) : réel</code> qui retourne 2 × (longueur + largeur).</span></div><div><b>02</b><span>Écris une procédure <code>AfficherPerimetre(p : réel)</code> qui affiche le résultat.</span></div><div><b>03</b><span>Déclare une variable réelle, appelle la fonction avec 8 et 3, puis transmets le résultat à la procédure.</span></div></div>
+  <p class="module1-lead">Résultat attendu : « Périmètre : 22 ». La correction se trouve sur la diapositive suivante.</p>
+</article>
+<article class="slide module1-slide subprogram-slide module1-content" data-title="Correction · Périmètre et affichage">
+  <p class="eyebrow">50 · Une solution possible</p>
+  <h2>Deux sous-programmes,<br /><span>une solution lisible</span></h2>
+  <pre class="module1-code"><code>FONCTION Perimetre(longueur : réel, largeur : réel) : réel
+DÉBUT
+    RETOURNER 2 * (longueur + largeur)
+FIN FONCTION
+
+PROCÉDURE AfficherPerimetre(p : réel)
+DÉBUT
+    ÉCRIRE "Périmètre : ", p
+FIN PROCÉDURE
+
+ALGORITHME Rectangle
+VARIABLES
+    resultat : réel
+DÉBUT
+    resultat ← Perimetre(8, 3)
+    AfficherPerimetre(resultat)
+FIN</code></pre>
+</article>
+<article class="slide module1-slide subprogram-slide module1-final" data-title="Module 1 · Bilan procédures et fonctions">
+  <p class="eyebrow">51 · Les idées essentielles</p>
+  <h2>Une tâche bien nommée,<br /><span>un algorithme plus clair</span></h2>
+  <div class="recap-list module1-recap"><div><b>01</b><span>Une définition prépare un sous-programme ; un appel l’exécute.</span></div><div><b>02</b><span>Une procédure accomplit une tâche. Une fonction renvoie une valeur avec <code>RETOURNER</code>.</span></div><div><b>03</b><span>Les paramètres reçoivent les arguments fournis à l’appel.</span></div><div><b>04</b><span><code>ÉCRIRE</code> affiche ; <code>RETOURNER</code> transmet un résultat au programme appelant.</span></div><div><b>05</b><span>Décompose la solution, puis teste chaque sous-programme avec plusieurs valeurs.</span></div></div>
+  <div class="finish-box module1-finish">✓ Module 1 terminé<br /><small>Tu sais organiser tes algorithmes avec des procédures et des fonctions.</small></div>
 </article>
 `;
 

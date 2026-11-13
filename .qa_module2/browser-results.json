@@ -1,0 +1,540 @@
+{
+  "navigation": {
+    "deepLink": true,
+    "groups": 3,
+    "module1": true,
+    "next": true,
+    "prev": true,
+    "keyboard": true,
+    "chapter": true,
+    "select": true,
+    "quizzes": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "errors": [],
+  "viewports": [
+    {
+      "name": "desktop",
+      "slides": 63,
+      "issues": [],
+      "heights": [
+        {
+          "id": "module-2",
+          "height": 690
+        },
+        {
+          "id": "python-plan",
+          "height": 690
+        },
+        {
+          "id": "python-definition",
+          "height": 690
+        },
+        {
+          "id": "python-usages",
+          "height": 690
+        },
+        {
+          "id": "python-execution",
+          "height": 690
+        },
+        {
+          "id": "python-cpython",
+          "height": 690
+        },
+        {
+          "id": "python-lancer",
+          "height": 690
+        },
+        {
+          "id": "python-syntaxe",
+          "height": 697
+        },
+        {
+          "id": "python-variables",
+          "height": 690
+        },
+        {
+          "id": "python-creer",
+          "height": 705
+        },
+        {
+          "id": "python-noms",
+          "height": 690
+        },
+        {
+          "id": "python-conventions",
+          "height": 690
+        },
+        {
+          "id": "python-casse",
+          "height": 690
+        },
+        {
+          "id": "python-modifier",
+          "height": 690
+        },
+        {
+          "id": "python-quiz-noms",
+          "height": 690
+        },
+        {
+          "id": "python-utiliser",
+          "height": 690
+        },
+        {
+          "id": "python-calcul-variables",
+          "height": 690
+        },
+        {
+          "id": "python-affectation",
+          "height": 690
+        },
+        {
+          "id": "python-copier",
+          "height": 690
+        },
+        {
+          "id": "python-types",
+          "height": 690
+        },
+        {
+          "id": "python-numeriques",
+          "height": 690
+        },
+        {
+          "id": "python-chaines",
+          "height": 690
+        },
+        {
+          "id": "python-booleens",
+          "height": 690
+        },
+        {
+          "id": "python-type",
+          "height": 690
+        },
+        {
+          "id": "python-conversions",
+          "height": 736
+        },
+        {
+          "id": "python-conversion-erreurs",
+          "height": 690
+        },
+        {
+          "id": "python-quiz-conversions",
+          "height": 690
+        },
+        {
+          "id": "python-operateurs",
+          "height": 727
+        },
+        {
+          "id": "python-arithmetique",
+          "height": 690
+        },
+        {
+          "id": "python-division",
+          "height": 690
+        },
+        {
+          "id": "python-operations-texte",
+          "height": 690
+        },
+        {
+          "id": "python-comparaisons",
+          "height": 718
+        },
+        {
+          "id": "python-logique",
+          "height": 690
+        },
+        {
+          "id": "python-raccourcis",
+          "height": 690
+        },
+        {
+          "id": "python-expressions",
+          "height": 690
+        },
+        {
+          "id": "python-priorites",
+          "height": 690
+        },
+        {
+          "id": "python-expression-moyenne",
+          "height": 690
+        },
+        {
+          "id": "python-quiz-operateurs",
+          "height": 690
+        },
+        {
+          "id": "python-print",
+          "height": 690
+        },
+        {
+          "id": "python-print-valeurs",
+          "height": 690
+        },
+        {
+          "id": "python-print-plusieurs",
+          "height": 690
+        },
+        {
+          "id": "python-print-sep",
+          "height": 690
+        },
+        {
+          "id": "python-print-end",
+          "height": 690
+        },
+        {
+          "id": "python-echappements",
+          "height": 690
+        },
+        {
+          "id": "python-fstrings",
+          "height": 690
+        },
+        {
+          "id": "python-quiz-print",
+          "height": 690
+        },
+        {
+          "id": "python-input",
+          "height": 690
+        },
+        {
+          "id": "python-input-texte",
+          "height": 690
+        },
+        {
+          "id": "python-input-entier",
+          "height": 690
+        },
+        {
+          "id": "python-input-nombres",
+          "height": 690
+        },
+        {
+          "id": "python-input-ordre",
+          "height": 690
+        },
+        {
+          "id": "python-if",
+          "height": 690
+        },
+        {
+          "id": "python-if-faux",
+          "height": 690
+        },
+        {
+          "id": "python-indentation",
+          "height": 690
+        },
+        {
+          "id": "python-if-else",
+          "height": 690
+        },
+        {
+          "id": "python-elif",
+          "height": 690
+        },
+        {
+          "id": "python-elif-ordre",
+          "height": 690
+        },
+        {
+          "id": "python-conditions-composees",
+          "height": 690
+        },
+        {
+          "id": "python-erreurs-frequentes",
+          "height": 690
+        },
+        {
+          "id": "python-quiz-conditions",
+          "height": 690
+        },
+        {
+          "id": "python-exemple-final",
+          "height": 690
+        },
+        {
+          "id": "python-bilan",
+          "height": 690
+        },
+        {
+          "id": "python-sources",
+          "height": 690
+        }
+      ]
+    },
+    {
+      "name": "mobile",
+      "slides": 63,
+      "issues": [],
+      "heights": [
+        {
+          "id": "module-2",
+          "height": 734
+        },
+        {
+          "id": "python-plan",
+          "height": 835
+        },
+        {
+          "id": "python-definition",
+          "height": 774
+        },
+        {
+          "id": "python-usages",
+          "height": 990
+        },
+        {
+          "id": "python-execution",
+          "height": 1003
+        },
+        {
+          "id": "python-cpython",
+          "height": 964
+        },
+        {
+          "id": "python-lancer",
+          "height": 948
+        },
+        {
+          "id": "python-syntaxe",
+          "height": 1097
+        },
+        {
+          "id": "python-variables",
+          "height": 885
+        },
+        {
+          "id": "python-creer",
+          "height": 982
+        },
+        {
+          "id": "python-noms",
+          "height": 991
+        },
+        {
+          "id": "python-conventions",
+          "height": 824
+        },
+        {
+          "id": "python-casse",
+          "height": 745
+        },
+        {
+          "id": "python-modifier",
+          "height": 874
+        },
+        {
+          "id": "python-quiz-noms",
+          "height": 720
+        },
+        {
+          "id": "python-utiliser",
+          "height": 730
+        },
+        {
+          "id": "python-calcul-variables",
+          "height": 808
+        },
+        {
+          "id": "python-affectation",
+          "height": 845
+        },
+        {
+          "id": "python-copier",
+          "height": 781
+        },
+        {
+          "id": "python-types",
+          "height": 858
+        },
+        {
+          "id": "python-numeriques",
+          "height": 782
+        },
+        {
+          "id": "python-chaines",
+          "height": 781
+        },
+        {
+          "id": "python-booleens",
+          "height": 782
+        },
+        {
+          "id": "python-type",
+          "height": 720
+        },
+        {
+          "id": "python-conversions",
+          "height": 927
+        },
+        {
+          "id": "python-conversion-erreurs",
+          "height": 1135
+        },
+        {
+          "id": "python-quiz-conversions",
+          "height": 720
+        },
+        {
+          "id": "python-operateurs",
+          "height": 1024
+        },
+        {
+          "id": "python-arithmetique",
+          "height": 836
+        },
+        {
+          "id": "python-division",
+          "height": 771
+        },
+        {
+          "id": "python-operations-texte",
+          "height": 870
+        },
+        {
+          "id": "python-comparaisons",
+          "height": 939
+        },
+        {
+          "id": "python-logique",
+          "height": 1039
+        },
+        {
+          "id": "python-raccourcis",
+          "height": 829
+        },
+        {
+          "id": "python-expressions",
+          "height": 855
+        },
+        {
+          "id": "python-priorites",
+          "height": 833
+        },
+        {
+          "id": "python-expression-moyenne",
+          "height": 1027
+        },
+        {
+          "id": "python-quiz-operateurs",
+          "height": 720
+        },
+        {
+          "id": "python-print",
+          "height": 1042
+        },
+        {
+          "id": "python-print-valeurs",
+          "height": 886
+        },
+        {
+          "id": "python-print-plusieurs",
+          "height": 823
+        },
+        {
+          "id": "python-print-sep",
+          "height": 833
+        },
+        {
+          "id": "python-print-end",
+          "height": 859
+        },
+        {
+          "id": "python-echappements",
+          "height": 771
+        },
+        {
+          "id": "python-fstrings",
+          "height": 833
+        },
+        {
+          "id": "python-quiz-print",
+          "height": 793
+        },
+        {
+          "id": "python-input",
+          "height": 1016
+        },
+        {
+          "id": "python-input-texte",
+          "height": 730
+        },
+        {
+          "id": "python-input-entier",
+          "height": 756
+        },
+        {
+          "id": "python-input-nombres",
+          "height": 848
+        },
+        {
+          "id": "python-input-ordre",
+          "height": 951
+        },
+        {
+          "id": "python-if",
+          "height": 952
+        },
+        {
+          "id": "python-if-faux",
+          "height": 720
+        },
+        {
+          "id": "python-indentation",
+          "height": 922
+        },
+        {
+          "id": "python-if-else",
+          "height": 730
+        },
+        {
+          "id": "python-elif",
+          "height": 756
+        },
+        {
+          "id": "python-elif-ordre",
+          "height": 848
+        },
+        {
+          "id": "python-conditions-composees",
+          "height": 781
+        },
+        {
+          "id": "python-erreurs-frequentes",
+          "height": 859
+        },
+        {
+          "id": "python-quiz-conditions",
+          "height": 902
+        },
+        {
+          "id": "python-exemple-final",
+          "height": 874
+        },
+        {
+          "id": "python-bilan",
+          "height": 883
+        },
+        {
+          "id": "python-sources",
+          "height": 720
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "code": "print(\"Bonjour !\")\nprint(8 + 4)",
+    "output": "Bonjour !\n12"
+  },
+  {
+    "code": "print(\"Bonjour !\")",
+    "output": "Bonjour !"
+  },
+  {
+    "code": "print(\"Mon premier programme\")\nprint(5 + 3)",
+    "output": "Mon premier programme\n8",
+    "label": "Fichier bonjour.py"
+  },
+  {
+    "code": "# Un message pour l utilisateur\nprint(\"Bonjour\")\n\n# Un calcul\nprint(10 + 5)",
+    "output": "Bonjour\n15"
+  },
+  {
+    "code": "age = 18\nnom = \"Sara\"\nprint(age)\nprint(nom)",
+    "output": "18\nSara"
+  },
+  {
+    "code": "prix = 25\nprint(prix)",
+    "output": "25"
+  },
+  {
+    "code": "prix_unitaire = 20\nnombre_articles = 3\nprix_total = prix_unitaire * nombre_articles\nprint(prix_total)",
+    "output": "60"
+  },
+  {
+    "code": "age = 18\nAge = 25\nprint(age)\nprint(Age)",
+    "output": "18\n25"
+  },
+  {
+    "code": "score = 10\nprint(score)\nscore = 15\nprint(score)",
+    "output": "10\n15"
+  },
+  {
+    "code": "age = 18\nprint(age)\nprint(\"age\")\nprint(\"Age :\", age)",
+    "output": "18\nage\nAge : 18"
+  },
+  {
+    "code": "longueur = 8\nlargeur = 3\naire = longueur * largeur\nperimetre = 2 * (longueur + largeur)\nprint(\"Aire :\", aire)\nprint(\"Perimetre :\", perimetre)",
+    "output": "Aire : 24\nPerimetre : 22"
+  },
+  {
+    "code": "score = 10\nscore = score + 3\nprint(score)",
+    "output": "13"
+  },
+  {
+    "code": "a = 5\nb = a\na = 9\nprint(a)\nprint(b)",
+    "output": "9\n5"
+  },
+  {
+    "code": "age = 18\ntemperature = -3\nprix = 12.5\npoids = 70.0\nprint(age, temperature)\nprint(prix, poids)",
+    "output": "18 -3\n12.5 70.0"
+  },
+  {
+    "code": "nom = \"Sara\"\nville = \"Rabat\"\nnumero = \"18\"\nprint(nom, ville)\nprint(numero + \"1\")",
+    "output": "Sara Rabat\n181"
+  },
+  {
+    "code": "est_connecte = True\na_paye = False\nage = 20\nest_majeur = age >= 18\nprint(est_connecte, a_paye)\nprint(est_majeur)",
+    "output": "True False\nTrue"
+  },
+  {
+    "code": "print(type(18))\nprint(type(18.0))\nprint(type(\"18\"))\nprint(type(True))",
+    "output": "<class 'int'>\n<class 'float'>\n<class 'str'>\n<class 'bool'>"
+  },
+  {
+    "code": "texte = \"18\"\nage = int(texte)\nprint(age + 1)",
+    "output": "19"
+  },
+  {
+    "code": "a = 8\nb = 3\nprint(a + b)\nprint(a - b)\nprint(a * b)",
+    "output": "11\n5\n24"
+  },
+  {
+    "code": "print(17 / 5)\nprint(17 // 5)\nprint(17 % 5)\nprint(3 * 5 + 2)",
+    "output": "3.4\n3\n2\n17"
+  },
+  {
+    "code": "print(2 + 3)\nprint(\"2\" + \"3\")\nprint(\"Bonjour \" + \"Sara\")\nprint(\"ha\" * 3)",
+    "output": "5\n23\nBonjour Sara\nhahaha"
+  },
+  {
+    "code": "age = 20\na_paye = True\nprint(age >= 18 and a_paye)\nprint(age < 12 or age >= 65)\nprint(not a_paye)",
+    "output": "True\nFalse\nFalse"
+  },
+  {
+    "code": "print(2 + 3 * 4)\nprint((2 + 3) * 4)\nprint(2 ** 3 + 1)\nprint((12 + 16) / 2)",
+    "output": "14\n20\n9\n14.0"
+  },
+  {
+    "code": "note1 = 12\nnote2 = 16\nsomme = note1 + note2\nmoyenne = somme / 2\nprint(moyenne)",
+    "output": "14.0"
+  },
+  {
+    "code": "print(\"Bonjour\")\nprint(\"Bienvenue au cours de Python\")",
+    "output": "Bonjour\nBienvenue au cours de Python"
+  },
+  {
+    "code": "age = 18\nprint(age)\nprint(\"age\")\nprint(age + 1)\nprint(\"Age :\", age)",
+    "output": "18\nage\n19\nAge : 18"
+  },
+  {
+    "code": "nom = \"Sara\"\nage = 18\nprint(\"Bonjour\", nom)\nprint(nom, \"a\", age, \"ans.\")\nprint(\"Dans un an :\", age + 1)",
+    "output": "Bonjour Sara\nSara a 18 ans.\nDans un an : 19"
+  },
+  {
+    "code": "print(\"A\", \"B\", \"C\")\nprint(\"A\", \"B\", \"C\", sep=\"-\")\nprint(5, 11, 2026, sep=\"/\")\nprint(\"A\", \"B\", \"C\", sep=\"\")",
+    "output": "A B C\nA-B-C\n5/11/2026\nABC"
+  },
+  {
+    "code": "print(\"Bonjour\", end=\" \")\nprint(\"Sara\")\nprint(\"A\", end=\"\")\nprint(\"B\")\nprint()\nprint(\"Fin\")",
+    "output": "Bonjour Sara\nAB\n\nFin"
+  },
+  {
+    "code": "print(\"Bonjour\\nSara\")\nprint(\"Il dit \\\"Salut\\\".\")\nprint(\"C:\\\\cours\")",
+    "output": "Bonjour\nSara\nIl dit \"Salut\".\nC:\\cours"
+  },
+  {
+    "code": "nom = \"Sara\"\nage = 18\nprix = 12.5\nprint(f\"Bonjour {nom}, tu as {age} ans.\")\nprint(f\"Prix : {prix:.2f} DH\")",
+    "output": "Bonjour Sara, tu as 18 ans.\nPrix : 12.50 DH"
+  },
+  {
+    "code": "nom = input(\"Ton nom : \")\nprint(\"Bonjour\", nom)",
+    "output": "Ton nom : Sara\nBonjour Sara",
+    "stdin": "Sara\n",
+    "terminalEcho": true
+  },
+  {
+    "code": "age = input(\"Age : \")\nprint(type(age))\nprint(age + \"1\")",
+    "output": "Age : 18\n<class 'str'>\n181",
+    "stdin": "18\n",
+    "terminalEcho": true
+  },
+  {
+    "code": "texte = input(\"Age : \")\nage = int(texte)\nage_suivant = age + 1\nprint(\"Dans un an :\", age_suivant)",
+    "output": "Age : 18\nDans un an : 19",
+    "stdin": "18\n",
+    "terminalEcho": true
+  },
+  {
+    "code": "prix = float(input(\"Prix unitaire : \"))\nquantite = int(input(\"Quantite : \"))\ntotal = prix * quantite\nprint(f\"Total : {total:.2f} DH\")",
+    "output": "Prix unitaire : 12.5\nQuantite : 3\nTotal : 37.50 DH",
+    "stdin": "12.5\n3\n",
+    "terminalEcho": true
+  },
+  {
+    "code": "note1 = float(input(\"Premiere note : \"))\nnote2 = float(input(\"Deuxieme note : \"))\nmoyenne = (note1 + note2) / 2\nprint(\"Moyenne :\", moyenne)",
+    "output": "Premiere note : 12\nDeuxieme note : 16\nMoyenne : 14.0",
+    "stdin": "12\n16\n",
+    "terminalEcho": true
+  },
+  {
+    "code": "age = 19\nif age >= 18:\n    print(\"Majeur\")\nprint(\"Fin\")",
+    "output": "Majeur\nFin"
+  },
+  {
+    "code": "age = 16\nif age >= 18:\n    print(\"Majeur\")\nprint(\"Fin\")",
+    "output": "Fin"
+  },
+  {
+    "code": "age = 20\nif age >= 18:\n    print(\"Bienvenue\")\n    print(\"Acces autorise\")\nprint(\"Verification terminee\")",
+    "output": "Bienvenue\nAcces autorise\nVerification terminee"
+  },
+  {
+    "code": "age = 16\nif age >= 18:\n    print(\"Majeur\")\nelse:\n    print(\"Mineur\")",
+    "output": "Mineur"
+  },
+  {
+    "code": "nombre = 0\nif nombre > 0:\n    print(\"Positif\")\nelif nombre < 0:\n    print(\"Negatif\")\nelse:\n    print(\"Nul\")",
+    "output": "Nul"
+  },
+  {
+    "code": "note = 15\nif note >= 16:\n    print(\"Tres bien\")\nelif note >= 14:\n    print(\"Bien\")\nelif note >= 10:\n    print(\"Admis\")\nelse:\n    print(\"Non admis\")",
+    "output": "Bien"
+  },
+  {
+    "code": "note = 14\nif note >= 0 and note <= 20:\n    print(\"Note valide\")\nelse:\n    print(\"Note invalide\")",
+    "output": "Note valide"
+  },
+  {
+    "code": "note = float(input(\"Note sur 20 : \"))\nif note < 0 or note > 20:\n    print(\"Note invalide\")\nelif note >= 10:\n    print(\"Admis\")\nelse:\n    print(\"Non admis\")",
+    "output": "Note sur 20 : 14\nAdmis",
+    "stdin": "14\n",
+    "terminalEcho": true
+  }
+]

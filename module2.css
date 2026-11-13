@@ -1,0 +1,137 @@
+/* Module 2 extends the course's light blue instructional slide system. */
+.module-navigation {
+  display: flex;
+  gap: 24px;
+  padding: 16px 28px;
+  border-bottom: 1px solid var(--line);
+}
+.module-navigation a {
+  padding: 8px 0;
+  color: #526277;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 800;
+  border-bottom: 2px solid transparent;
+}
+.module-navigation a span { font-weight: 500; margin-left: 6px; }
+.module-navigation a[aria-current] { color: #075985; border-color: #0284c7; }
+.module-navigation a:hover { color: #075985; }
+.module-navigation a:focus-visible,
+.python-slide a:focus-visible,
+.python-slide button:focus-visible { outline: 3px solid #0284c7; outline-offset: 4px; }
+.python-slide {
+  background: #fff;
+  color: #172033;
+  font-family: Aptos, Inter, system-ui, sans-serif;
+  padding: 46px 68px 34px;
+}
+.python-slide h1, .python-slide h2 {
+  color: #12304a;
+  font-family: "Aptos Display", Aptos, Inter, system-ui, sans-serif;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+.python-slide h2 { font-size: 2.9rem; line-height: 1.12; margin: 8px 0 24px; }
+.python-slide h1 { font-size: 5rem; line-height: 1.05; max-width: 800px; }
+.python-slide h1 span, .python-slide h2 span { color: #0284c7; }
+.python-slide .eyebrow { color: #007a36; margin-bottom: 14px; }
+.python-lead, .python-copy { max-width: 72ch; font-size: 1.4rem; line-height: 1.5; color: #42536a; }
+.python-lead { margin-bottom: 24px; }
+.python-copy p:last-child { margin-bottom: 0; }
+.python-split { display: grid; grid-template-columns: 1fr 1.12fr; gap: 28px; align-items: start; }
+.python-split > * { min-width: 0; }
+.python-slide h3 { color: #12304a; font-size: 1.4rem; margin: 0 0 16px; }
+.python-slide ul, .python-slide ol { padding-left: 26px; margin: 0; }
+.python-slide li { margin-bottom: 12px; }
+.python-slide figure { margin: 0; min-width: 0; }
+.python-slide figcaption { margin-bottom: 9px; color: #526277; font-size: .86rem; font-weight: 800; }
+body .python-slide pre.python-code,
+body .python-slide pre.python-output {
+  margin: 0;
+  padding: 18px 20px;
+  border: 1px solid #c9dce8;
+  border-left: 3px solid #009a44;
+  border-radius: 8px;
+  background: #eaf2f8;
+  color: #17324d;
+  box-shadow: none;
+  font: 500 1.27rem/1.5 "Cascadia Mono", Consolas, monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  tab-size: 4;
+}
+body .python-slide pre.python-code code {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+}
+body .python-slide code {
+  color: #17324d;
+  background: #eaf2f8;
+  font-family: "Cascadia Mono", Consolas, monospace;
+  font-size: .92em;
+  overflow-wrap: anywhere;
+}
+.python-output-wrap { margin-top: 14px !important; }
+.python-slide > .python-demo:has(.python-output-wrap) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.python-slide > .python-demo > .python-output-wrap { margin-top: 0 !important; }
+.python-demo, .python-demo > * { min-width: 0; }
+.python-slide > .python-demo + .python-copy,
+.python-slide > .python-table-wrap + .python-demo { margin-top: 24px; }
+.python-quiz-layout { display: grid; grid-template-columns: 1.05fr 1fr; gap: 24px; align-items: start; }
+.python-quiz-layout > * { min-width: 0; }
+body .python-slide pre.python-output { background: #f5f8fa; border-left-width: 1px; }
+.python-note { margin-top: 24px; padding: 16px 20px; background: #fff8e7; color: #644a00; font-size: 1.2rem; line-height: 1.45; border-radius: 8px; }
+.python-note strong { color: #644a00; }
+.python-table-wrap { width: 100%; }
+.python-table { width: 100%; border-collapse: collapse; font-size: 1.27rem; line-height: 1.4; text-align: left; }
+.python-table th { color: #1f4e79; background: #eaf2f8; }
+.python-table th, .python-table td { padding: 12px 14px; border-bottom: 1px solid #c9dce8; vertical-align: top; }
+.python-table td:first-child { font-weight: 700; }
+.python-table code { white-space: normal; }
+.python-footer { margin-top: 32px; color: #526277; font-size: .78rem; letter-spacing: .025em; }
+.python-cover { background: #eff8fd; }
+.python-cover .python-lead { max-width: 640px; font-size: 1.65rem; }
+.python-cover-mark { margin: 34px 0; display: flex; gap: 16px; align-items: center; color: #1f4e79; font-size: 1.3rem; flex-wrap: wrap; }
+.python-cover-mark code { padding: 12px 18px; border-radius: 8px; background: #fff; }
+.python-route { list-style: none; padding: 0 !important; display: grid; grid-template-columns: 1fr 1fr; column-gap: 30px; }
+.python-route li { margin: 0; border-bottom: 1px solid #c9dce8; }
+.python-route a { display: block; padding: 15px 0; color: #075985; text-decoration: none; font-weight: 700; font-size: 1.35rem; }
+.python-route a:hover, .python-sources a:hover { text-decoration: underline; }
+.python-pipeline { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin: 25px 0; font-size: 1.35rem; }
+.python-pipeline span { padding: 16px 20px; background: #eaf2f8; border-radius: 8px; }
+.python-pipeline b { color: #007a36; }
+.python-slide .standalone-quiz { padding: 24px; max-width: none; box-shadow: none; }
+.python-slide .quiz > p { font-size: 1.4rem; }
+.python-slide .choices button { font-size: 1.2rem; line-height: 1.4; }
+.python-slide .feedback { font-size: 1.1rem; line-height: 1.4; min-height: 2.8em; }
+.python-sources { font-size: 1.2rem; line-height: 1.6; }
+.python-sources a { color: #075985; text-underline-offset: 4px; }
+.python-slide ::selection { background: #cceaf7; color: #12304a; }
+@media (max-width: 780px) {
+  .module-navigation { gap: 16px; padding: 10px 16px; justify-content: space-between; }
+  .module-navigation a { font-size: .82rem; }
+  .module-navigation a span { display: none; }
+  .python-slide { padding: 32px 24px; }
+  .python-slide h1 { font-size: 3.3rem; }
+  .python-slide h2 { font-size: 2.1rem; }
+  .python-split, .python-route, .python-quiz-layout { grid-template-columns: 1fr; }
+  .python-slide > .python-demo:has(.python-output-wrap) { grid-template-columns: 1fr; gap: 16px; }
+  .python-split { gap: 22px; }
+  .python-copy, .python-lead, .python-cover .python-lead { font-size: 1.25rem; }
+  .python-table { font-size: 1.06rem; table-layout: fixed; }
+  .python-table th, .python-table td { padding: 10px 6px; overflow-wrap: anywhere; }
+  body .python-slide pre.python-code, body .python-slide pre.python-output { font-size: 1.08rem; padding: 14px; }
+  .python-note { font-size: 1.1rem; }
+  .python-slide .standalone-quiz { padding: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .python-slide.active { animation: none; }
+}
